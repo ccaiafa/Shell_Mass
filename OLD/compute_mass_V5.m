@@ -1,4 +1,4 @@
-function [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
+function [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  alpha, delta, shell)
 
 threshold = 5;
 %threshold = 25;
@@ -120,22 +120,17 @@ x(any(isnan(x),2),:)=[];
 %fig1 = figure('Position',[10,500,1300,400]);
 %hold on0
 %axes1 = axes('Parent',fig1,'Layer','top');
-
-if Visualization
-    fig1 = gcf;
-    subplot(2,2,1);
-    %imagesc([longmin longmax],[latmin latmax],sub,'Parent',axes1)
-    imagesc([longmin longmax],[latmin latmax],sub)
-    cref = caxis;
-    %image([longmin longmax],[latmin latmax],sub,'Parent',axes1,'CDataMapping','scaled')
-    set(gca,'YDir','normal')
-    set(gca,'XDir','reverse')
-    box(gca,'on');
-    hold(gca,'all');
-    plot(shell.long,shell.lat,'MarkerSize',12,'Marker','o','LineWidth',1,'LineStyle','none','Color',[1 0 0]);
-else
-    fig1 = [];
-end
+fig1 = gcf;
+subplot(2,2,1);
+%imagesc([longmin longmax],[latmin latmax],sub,'Parent',axes1)
+imagesc([longmin longmax],[latmin latmax],sub)
+cref = caxis;
+%image([longmin longmax],[latmin latmax],sub,'Parent',axes1,'CDataMapping','scaled')
+set(gca,'YDir','normal')
+set(gca,'XDir','reverse')
+box(gca,'on');
+hold(gca,'all');
+plot(shell.long,shell.lat,'MarkerSize',12,'Marker','o','LineWidth',1,'LineStyle','none','Color',[1 0 0]);
 
 %fig2 = figure;
 
@@ -148,7 +143,7 @@ end
 inda =1;
 scan_max0 = scan_max;
 for a = alpha
-    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],Visualization);
+    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0]);
     %scan_max = scan_max_new;
     %x = x_new;
     
@@ -176,23 +171,19 @@ for a = alpha
                 diameter(inda,indd) = NaN;
             else
                 diameter(inda,indd) = 2*dev(1);
-                if Visualization
-                    show_map(fig1,1,[longmin longmax],[latmin latmax], sub, cref)
-                    graficar_puntos(fig1,1,x_new,'o',[1 0 0])
-                end
+                show_map(fig1,1,[longmin longmax],[latmin latmax], sub, cref)
+                graficar_puntos(fig1,1,x_new,'o',[1 0 0])
                 %if ~isempty(inwall)
                 %    graficar_puntos(fig1,1,inwall,'x',[0 0 0])
                 %end
                 %graficar_puntos(fig1,1,outwall,'x',[0 0 1])
                 % depurar bordes externos
-                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],Visualization);
+                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0]);
                 % Completar bordes externos
                 [outwall, scan_out] = completar_bordes(scan_out,shell.long,shell.lat,L,N); 
-                if Visualization
-                    graficar_puntos(fig1,1,outwall,'x',[0 0 0])
-                    plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
-                    title(['MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
-                end
+                graficar_puntos(fig1,1,outwall,'x',[0 0 0])
+                plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
+                title(['MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
                 
                 %% mostrar elipse de catalogo
                 %hold on
@@ -212,20 +203,16 @@ for a = alpha
 
                 sub_back = background(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
 
-                if Visualization
-                    show_map(fig1,3,[longmin longmax],[latmin latmax], sub_back, cref)
-                    hold on
-                    plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
-                    title(['RESIDUAL (MAP - SHELL)'])
-                end
+                show_map(fig1,3,[longmin longmax],[latmin latmax], sub_back, cref)
+                hold on
+                plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
+                title(['RESIDUAL (MAP - SHELL)'])
                 
                 sub_corrected = sub - sub_back;
                 sub_corrected(sub_corrected < 0) = 0;
 
-                if Visualization
-                    show_map(fig1,2,[longmin longmax],[latmin latmax], sub_corrected, [])
-                    hold on
-                end
+                show_map(fig1,2,[longmin longmax],[latmin latmax], sub_corrected, [])
+                hold on                             
                 
                 %plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
                 
@@ -249,10 +236,9 @@ for a = alpha
                     Masa = NaN;
                 end
                 
-                if Visualization
-                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassMax,'%10.5e\n')])
-                    pause(0.01)
-                end
+                
+                title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassMax,'%10.5e\n')])
+                pause(0.01)
 
                 mass(inda,indd) = Masa;
                 
@@ -264,11 +250,10 @@ for a = alpha
                 sub_picos = -sub_missing(sub_missing<0); 
                 sub_missing(sub_missing < 0) = 0;
                 
-                if Visualization
-                    show_map(fig1,4,[longmin longmax],[latmin latmax], sub_back_with_missing, cref)
-                    hold on
-                    title(['RESIDUAL FILLED WITH MISSING MASS'])
-                end
+                
+                show_map(fig1,4,[longmin longmax],[latmin latmax], sub_back_with_missing, cref)
+                hold on
+                title(['RESIDUAL FILLED WITH MISSING MASS'])
                
                 
                 %% Calculo de missing mass y masas picos
@@ -289,10 +274,8 @@ for a = alpha
                     Masa_missing = NaN;
                 end
                 
-                if Visualization
-                    title(['Missing Mass= ',num2str(Masa_missing,'%10.5e\n'),' ((Mass-Missing)/Mass=',num2str(100*(Masa-Masa_missing)/Masa),'%)'])
-                    pause(0.01)
-                end
+                title(['Missing Mass= ',num2str(Masa_missing,'%10.5e\n'),' ((Mass-Missing)/Mass=',num2str(100*(Masa-Masa_missing)/Masa),'%)'])
+                pause(0.01)
 
                 missing_mass(inda,indd) = Masa_missing;
                 

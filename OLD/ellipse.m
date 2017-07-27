@@ -1,4 +1,4 @@
-function [x,y]=ellipse(ra,rb,ang,x0,y0,C,Nb,Visualization)
+function [x,y]=ellipse(ra,rb,ang,x0,y0,C,Nb)
 % Ellipse adds ellipses to the current plot
 %
 % ELLIPSE(ra,rb,ang,x0,y0) adds an ellipse with semimajor axis of ra,
@@ -144,8 +144,8 @@ for k=1:maxk
   the=linspace(0,2*pi,Nb(rem(k-1,size(Nb,1))+1,:)+1);
   x=radm*cos(the)*co-si*radn*sin(the)+xpos;
   y=radm*cos(the)*si+co*radn*sin(the)+ypos;
-  if Visualization
-      h(k)=line(x,y);
-      set(h(k),'color',C(rem(k-1,size(C,1))+1,:));
-  end
-  end
+  h(k)=line(x,y);
+  set(h(k),'color',C(rem(k-1,size(C,1))+1,:));
+
+end;
+

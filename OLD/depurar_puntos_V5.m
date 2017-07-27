@@ -1,4 +1,4 @@
-function [scan,x,devant] = depurar_puntos_V5(scan,x,fig1,subplotnr,longmin,longmax,latmin,latmax,sub,shell,P,alpha,color_puntos,Visualization)
+function [scan,x,devant] = depurar_puntos_V5(scan,x,fig1,subplotnr,longmin,longmax,latmin,latmax,sub,shell,P,alpha,color_puntos)
 
 deltapuntos = 1;
 while (deltapuntos ~= 0) && (size(x,1))>5 %(~isempty(x))
@@ -13,19 +13,15 @@ while (deltapuntos ~= 0) && (size(x,1))>5 %(~isempty(x))
     
         center = mean(x);
         
-        if Visualization
-            cref = caxis;
-            show_map(fig1,subplotnr,[longmin longmax],[latmin latmax], sub, cref)
-            
-            graficar_puntos(fig1,subplotnr,x,'o',color_puntos)
-            
-            
-            [xep(:,1),xep(:,2)] = ellipse(dev(1),dev(2),tita*180/pi,center(1),center(2),color_puntos,P,Visualization);
-            
-            pause(0.1);
-        else
-            [xep(:,1),xep(:,2)] = ellipse(dev(1),dev(2),tita*180/pi,center(1),center(2),color_puntos,P,Visualization);
-        end
+        cref = caxis;
+        show_map(fig1,subplotnr,[longmin longmax],[latmin latmax], sub, cref)
+    
+        graficar_puntos(fig1,subplotnr,x,'o',color_puntos)
+        
+    
+        [xep(:,1),xep(:,2)] = ellipse(dev(1),dev(2),tita*180/pi,center(1),center(2),color_puntos,P);
+
+        pause(0.1);
         
         devant = dev;
         [scan, x, deltapuntos ] = depurar(scan, xep, alpha*dev(1)); 
