@@ -240,7 +240,7 @@ for a = alpha
                 %constd = 2.8*3.085647758e21; % cm Distancia usada en el paper de Laura
                 mHI = 1.67e-24;
 
-                Masa = sub_corrected*C*dVT*Omega*constd^2*mHI; %gr
+                Masa = sub_corrected*C*dVT*Omega*(constd^2)*mHI; %gr
                 Masa = sum(Masa(:)); %gr
 
                 if Masa
@@ -280,7 +280,7 @@ for a = alpha
                 %constd = 2.8*3.085647758e21; % cm Distancia usada en el paper de Laura
                 mHI = 1.67e-24;
 
-                Masa_missing = sub_missing*C*dVT*Omega*constd^2*mHI; %gr
+                Masa_missing = sub_missing*C*dVT*Omega*(constd^2)*mHI; %gr
                 Masa_missing = sum(Masa_missing(:)); %gr
 
                 if Masa_missing

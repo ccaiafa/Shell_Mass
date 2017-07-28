@@ -1,6 +1,6 @@
 
 
-function [alpha_opt, delta_opt, mean_error_train, std_error_train, mean_error_test, std_error_test] = hyper_tuning(dataRootPath, shell_train, alpha_range, delta_range, perc_out, Ncross, Visualization)
+function [alpha_opt_mass, delta_opt_mass, error_mass_train, error_mass_eval, alpha_opt_miss, delta_opt_miss, error_miss_train, error_miss_eval] = hyper_tuning(dataRootPath, shell_train, alpha_range, delta_range, perc_out, Ncross, Visualization)
 
 N = size(shell_train,2);
 N_eval = round(perc_out*N);
@@ -9,8 +9,18 @@ N_subtrain = N-N_eval;
 Nalpha = length(alpha_range);
 Ndelta = length(delta_range);
 
+alpha_opt_mass = zeros(Ncross, 1);
+delta_opt_mass = zeros(Ncross, 1);
+alpha_opt_miss = zeros(Ncross, 1);
+delta_opt_miss = zeros(Ncross, 1);
+error_mass_train = zeros(Ncross, 1);
+error_mass_eval = zeros(Ncross, 1);
+error_miss_train = zeros(Ncross, 1);
+error_miss_eval = zeros(Ncross, 1);
+
 % Crossvalidation loop
 for n=1:Ncross
+    disp(['Crossvalidation iteration ',num2str(n)]);
     % In each iteration we divide the training set into: subtrain_set and eval_set
     ind_rnd = randperm(N);
     ind_subtrain = ind_rnd(1:N_subtrain);
@@ -22,17 +32,23 @@ for n=1:Ncross
     Mass = zeros(Nalpha,Ndelta,N_subtrain); % HI-shell mass for every parameter (alpha,delta)
     Missing_Mass = zeros(Nalpha,Ndelta,N_subtrain); % Missing mass for every parameter (alpha,delta)
     Diameter = zeros(Nalpha,Ndelta,N_subtrain);
+    Diff2_mass = zeros(Nalpha,Ndelta,N_subtrain);
+    Diff2_miss = zeros(Nalpha,Ndelta,N_subtrain);  
     
     if Visualization
         fig = figure('Position',[10,600,600,400]);
     end
+
+    %% Compute masses in the subtrain set
+    fprintf('Training ')
     for s=1:N_subtrain
+        fprintf('.')
         shell = shell_subtrain{s};
         aux = shell.long;
         if (aux < 130 - shell.a) && ( aux > 80 + shell.a)
-            disp(['shell ',num2str(s), ' en cubo 1']);
-            disp(['loading data-cube...']);
-            tic
+            %disp(['shell ',num2str(s), ' en cubo 1']);
+            %disp(['loading data-cube...']);
+            %tic
             if shell.lat < 0 % Latitudes negativas
                 fname = deblank(ls(fullfile(dataRootPath,'BL80-130.B10-50.FITS')));
             else             % Latitudes positivas
@@ -40,24 +56,23 @@ for n=1:Ncross
             end
             cube = fitsread(fname);
             n_hdu = fitsinfo(fname);
-            toc
+            %toc
         elseif (aux < 170 - shell.a) && (aux >120 + shell.a)
-            disp(['shell ',num2str(s), 'en cubo 2']);
-            disp(['loading data-cube...']);
-            tic
+            %disp(['shell ',num2str(s), 'en cubo 2']);
+            %disp(['loading data-cube...']);
+            %tic
             if shell.lat < 0 % Latitudes negativas
-                disp('cubo 2 latitudes negativas no disponible')
-                %fname = deblank(ls(fullfile(dataRootPath,'BL80-130.B10-50.FITS'));
+                fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B50-10.FITS')));
             else             % Latitudes positivas
                 fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B-10_50.FITS')));
             end
             cube = fitsread(fname);
             n_hdu = fitsinfo(fname);
-            toc
+            %toc
         elseif (aux < 210 - shell.a) && (aux >160 + shell.a)
-            disp(['shell ',num2str(s), 'en cubo 3']);
-            disp(['loading data-cube...']);
-            tic
+            %disp(['shell ',num2str(s), 'en cubo 3']);
+            %disp(['loading data-cube...']);
+            %tic
             if shell.lat < 0 % Latitudes negativas
                 fname = deblank(ls(fullfile(dataRootPath,'BL160-210B-50.FITS')));
             else             % Latitudes positivas
@@ -65,11 +80,11 @@ for n=1:Ncross
             end
             cube = fitsread(fname);
             n_hdu = fitsinfo(fname);
-            toc            
+            %toc            
         elseif (aux < 250 - shell.a) && (aux >200 + shell.a)
-            disp(['shell ',num2str(s), 'en cubo 4']);
-            disp(['loading data-cube...']);
-            tic
+            %disp(['shell ',num2str(s), 'en cubo 4']);
+            %disp(['loading data-cube...']);
+            %tic
             if shell.lat < 0 % Latitudes negativas
                 fname = deblank(ls(fullfile(dataRootPath,'BL200-250.B-50.FITS')));
             else             % Latitudes positivas
@@ -77,29 +92,127 @@ for n=1:Ncross
             end
             cube = fitsread(fname);
             n_hdu = fitsinfo(fname);
-            toc                 
+            %toc                 
         elseif (aux < 290 - shell.a) && (aux >240 + shell.a)
-            disp(['shell ',num2str(s), 'en cubo 5']);
-            disp(['loading data-cube...']);
-            tic
+            %disp(['shell ',num2str(s), 'en cubo 5']);
+            %disp(['loading data-cube...']);
+            %tic
             if shell.lat < 0 % Latitudes negativas
                 fname = deblank(ls(fullfile(dataRootPath,'BL240-290.B-50.FITS')));
             else             % Latitudes positivas
-                disp('cubo 5 latitudes positivas no disponible')
-                %fname = deblank(ls(fullfile(dataRootPath,'BL200-250.B+50.FITS'));
+                fname = deblank(ls(fullfile(dataRootPath,'BL240-290.B+50.FITS')));
             end
             cube = fitsread(fname);
             n_hdu = fitsinfo(fname);
-            toc              
+            %toc              
         end
         
         % Comute mass associated to HI-shell n
-        disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
+        %disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
         [Mass(:,:,s), Missing_Mass(:,:,s), Diameter(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization);
-
-    
+        Diff2_mass(:,:,s) = abs(Mass(:,:,s) - shell.MassMin).^2;
+        Diff2_miss(:,:,s) = abs(Missing_Mass(:,:,s) - shell.MassMin).^2;
     end
-
+    % Find minimum error
+    cost_mass_function = nanmean(Diff2_mass,3);
+    cost_miss_function = nanmean(Diff2_miss,3);
+    
+    [~,ind_mass] = nanmin(reshape(cost_mass_function,[Nalpha*Ndelta,1]));
+    [ia,id] = ind2sub([Nalpha,Ndelta],ind_mass);
+    alpha_opt_mass(n) = alpha_range(ia);
+    delta_opt_mass(n) = delta_range(id);
+    error_mass_train(n) = cost_mass_function(ia, id);
+    
+    [~,ind_miss] = nanmin(reshape(cost_miss_function,[Nalpha*Ndelta,1]));
+    [ia,id] = ind2sub([Nalpha,Ndelta],ind_miss);
+    alpha_opt_miss(n) = alpha_range(ia);
+    delta_opt_miss(n) = delta_range(id);  
+    error_miss_train(n) = cost_miss_function(ia, id);
+    
+    %% Compute masses in the validation set
+    
+    Diff2_mass_eval = zeros(N_eval,1);
+    Diff2_miss_eval = zeros(N_eval,1); 
+    Mass_eval = zeros(N_eval,1);
+    Missing_Mass_eval = zeros(N_eval,1);
+    Diameter_eval = zeros(N_eval,1);
+    
+    disp(' '); fprintf('Evaluating ')
+    for s=1:N_eval
+        fprintf('.')
+        shell = shell_eval{s};
+        aux = shell.long;
+        if (aux < 130 - shell.a) && ( aux > 80 + shell.a)
+            %disp(['shell ',num2str(s), ' en cubo 1']);
+            %disp(['loading data-cube...']);
+            %tic
+            if shell.lat < 0 % Latitudes negativas
+                fname = deblank(ls(fullfile(dataRootPath,'BL80-130.B10-50.FITS')));
+            else             % Latitudes positivas
+                fname = deblank(ls(fullfile(dataRootPath,'BL80-130.B50-10.FITS')));
+            end
+            cube = fitsread(fname);
+            n_hdu = fitsinfo(fname);
+            %toc
+        elseif (aux < 170 - shell.a) && (aux >120 + shell.a)
+            %disp(['shell ',num2str(s), 'en cubo 2']);
+            %disp(['loading data-cube...']);
+            %tic
+            if shell.lat < 0 % Latitudes negativas
+                fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B50-10.FITS')));
+            else             % Latitudes positivas
+                fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B-10_50.FITS')));
+            end
+            cube = fitsread(fname);
+            n_hdu = fitsinfo(fname);
+            %toc
+        elseif (aux < 210 - shell.a) && (aux >160 + shell.a)
+            %disp(['shell ',num2str(s), 'en cubo 3']);
+            %disp(['loading data-cube...']);
+            %tic
+            if shell.lat < 0 % Latitudes negativas
+                fname = deblank(ls(fullfile(dataRootPath,'BL160-210B-50.FITS')));
+            else             % Latitudes positivas
+                fname = deblank(ls(fullfile(dataRootPath,'BL160-210B+50.FITS')));
+            end
+            cube = fitsread(fname);
+            n_hdu = fitsinfo(fname);
+            %toc            
+        elseif (aux < 250 - shell.a) && (aux >200 + shell.a)
+            %disp(['shell ',num2str(s), 'en cubo 4']);
+            %disp(['loading data-cube...']);
+            %tic
+            if shell.lat < 0 % Latitudes negativas
+                fname = deblank(ls(fullfile(dataRootPath,'BL200-250.B-50.FITS')));
+            else             % Latitudes positivas
+                fname = deblank(ls(fullfile(dataRootPath,'BL200-250.B+50.FITS')));
+            end
+            cube = fitsread(fname);
+            n_hdu = fitsinfo(fname);
+            %toc                 
+        elseif (aux < 290 - shell.a) && (aux >240 + shell.a)
+            %disp(['shell ',num2str(s), 'en cubo 5']);
+            %disp(['loading data-cube...']);
+            %tic
+            if shell.lat < 0 % Latitudes negativas
+                fname = deblank(ls(fullfile(dataRootPath,'BL240-290.B-50.FITS')));
+            else             % Latitudes positivas
+                fname = deblank(ls(fullfile(dataRootPath,'BL240-290.B+50.FITS')));
+            end
+            cube = fitsread(fname);
+            n_hdu = fitsinfo(fname);
+            %toc              
+        end
+        
+        % Comute mass associated to HI-shell n
+        %disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
+        [Mass_eval(s), Missing_Mass_eval(s), Diameter_eval(s)] = compute_mass_V5(cube,n_hdu,alpha_opt_miss(n),delta_opt_miss(n),shell,Visualization);
+        Diff2_mass_eval(s) = abs(Mass_eval(s) - shell.MassMin)^2;
+        Diff2_miss_eval(s) = abs(Missing_Mass_eval(s) - shell.MassMin)^2;
+    end
+    
+    error_mass_eval(n) = nanmean(Diff2_mass_eval);
+    error_miss_eval(n) = nanmean(Diff2_miss_eval);
     
 end
 
