@@ -4,8 +4,9 @@ N = length(scan{1}.profile);
 
 d = L/(N-1);
 
-ang = 2*pi/P;
+%ang = 2*pi/P;
 for p=1:P
+    ang = p*(2*pi/P);
     scan_in{p}.profile = scan{p}.profile;
     scan_out{p}.profile = scan{p}.profile;
     if scan{p}.flag
@@ -37,7 +38,7 @@ for p=1:P
         scan_out{p}.flag = 0;
               
     end
-    ang = ang+2*pi/P;
+    %ang = ang+2*pi/P;
 end
 
 

@@ -19,8 +19,9 @@ end
 
 %% Compute masses 
 disp('Computing masses')
-for s=1:N
-    fprintf('.')
+parfor s=1:N
+    %fprintf('.')
+    disp([num2str(s),'/',num2str(N)])
     shell = shell_all{s};
     [fname, cube, n_hdu] = select_cube(dataRootPath,shell);
     
