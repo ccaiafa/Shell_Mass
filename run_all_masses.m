@@ -29,7 +29,8 @@ for s=1:N
     [Mass(:,:,s), Missing_Mass(:,:,s), Diameter(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization);
 end
 
-save('variables.mat')
+save('variables2.mat')
+Diff = abs(Mass - Missing_Mass);
 
 
 end
