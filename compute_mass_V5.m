@@ -1,7 +1,8 @@
 function [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
-threshold = 5;
+%threshold = 5;
 %threshold = 25;
+threshold = 15;
 thresholddeltamax = 10;
 %thresholddeltamax = 20;
 
