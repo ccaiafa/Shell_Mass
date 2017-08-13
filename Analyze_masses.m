@@ -1,15 +1,22 @@
 clear
 
+
 %load 'variables.mat'
 %load 'variables2.mat' % threshold = 5
 %load 'variables3.mat' % threshold = 25
-load 'variables4.mat' % threshold = 15
+%load 'variables4.mat' % threshold = 15 and L0 = 0.5b
+%load 'variables5.mat' % threshold = 5 and L0 = 0.5b
+%load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
+load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
+
+dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
 
 shell_candidates = load_shells_4c_Dvel_100();
 alpha = 0.1:0.01:0.5;
 delta = 0.:0.001:0.1;
+alpha_range = 0.1:0.01:0.5;
 
-Top_Diam_Diff = 0.10; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = 1; % Optimal rmse_miss=60,750,  rmse_mass=62,833
 
 Diff2 = zeros(size(Mass));
 Diff_missing = zeros(size(Mass));
@@ -29,7 +36,6 @@ for n=1:N
     % Restrict tensor A to the cases where the estimated Diameter is close to the real
     % one
     %% Keep, for example, 10% Top most similar Diameter region.
-    
     B = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
     [~, index] = sort(B(:),'ascend');
     
@@ -73,7 +79,17 @@ rmse_Miss = sqrt(nanmean((masses(:,1)-masses(:,2)).^2));
 legend('show');
 title(['Top ',num2str(100*Top_Diam_Diff),'%,  rmse Missing=',num2str(rmse_Miss),', rmse Mass=', num2str(rmse_Mass)])
 
+%% Visualize structures
+Visualization = 1;
 
+for n=1:N
+    figure
+    [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
+    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization);
+
+end
+
+stop
 %% Scatter plot de MIssing Mass
 figure
 scatter(masses(:,1),masses(:,3),'DisplayName','Missing Mass')
