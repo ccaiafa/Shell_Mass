@@ -20,6 +20,7 @@ end
 %% Compute masses 
 disp('Computing masses')
 parfor s=1:N
+%for s=59:N
     %fprintf('.')
     disp([num2str(s),'/',num2str(N)])
     shell = shell_all{s};
@@ -30,7 +31,7 @@ parfor s=1:N
     [Mass(:,:,s), Missing_Mass(:,:,s), Diameter(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization);
 end
 
-save('variables4.mat')
+save('variables7.mat')
 Diff = abs(Mass - Missing_Mass);
 
 
@@ -55,9 +56,9 @@ elseif (aux < 170 - shell.a) && (aux >120 + shell.a)
     %disp(['loading data-cube...']);
     %tic
     if shell.lat < 0 % Latitudes negativas
-        fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B50-10.FITS')));
-    else             % Latitudes positivas
         fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B-10_50.FITS')));
+    else             % Latitudes positivas
+        fname = deblank(ls(fullfile(dataRootPath,'BL170-120.B50-10.FITS')));
     end
     cube = fitsread(fname);
     n_hdu = fitsinfo(fname);

@@ -1,8 +1,9 @@
 function [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
+threshold = 3;
 %threshold = 5;
 %threshold = 25;
-threshold = 15;
+%threshold = 15;
 thresholddeltamax = 10;
 %thresholddeltamax = 20;
 
@@ -91,7 +92,7 @@ for p=1:P
     scan_max{p}.profile = improfile(sub,[j0,jend],[i0,iend],N);
     
     %[scan_max{p}.val,scan_max{p}.ind] = max(scan_max{p}.profile);
-    [scan_max{p}.val,scan_max{p}.ind] = local_max(scan_max{p}.profile,threshold,thresholddeltamax,0,L);
+    [scan_max{p}.val,scan_max{p}.ind] = local_max(scan_max{p}.profile,threshold,thresholddeltamax,0,L,shell);
     
     if scan_max{p}.ind 
         scan_max{p}.long = shell.long - (scan_max{p}.ind - 1)*dif*cos(ang);
@@ -310,11 +311,15 @@ end
 
 end
 
-function  [val,ind] = local_max(profile,threshold,thresholddeltamax,thresholdmax,L)
+function  [val,ind] = local_max(profile,threshold,thresholddeltamax,thresholdmax,L,shell)
+L0 = shell.b*0; % start searching at xx% of parameter b (ellipse semiaxis)
+Lmax = shell.a*1.25; % stop searching at 125% of parameter a (ellipse semiaxis)
 n2found = 0;
 Npoints = length(profile);
 dL = L/Npoints;
-for n2=1:Npoints
+n0 = ceil(L0/dL);
+nmax = ceil(Lmax/dL);
+for n2=n0:nmax
     if n2 > 1 
         if ((profile(n2) - profile(n2-1))/dL > threshold) && ~n2found;%missing
             n2found = n2;
@@ -326,13 +331,13 @@ missingmax = 1;
 minimum = profile(1);
 if n2found; % if a bigslop was found at ang then we search for a maximum beyond that point
     n2 = n2found;
-    while n2 < Npoints && missingmax         
+    while n2 < nmax && missingmax         
         ninf = n2 - 1;
         nsup = n2 + 1;                        
         while (ninf > 1) && abs(profile(n2) - profile(ninf))/dL < thresholddeltamax
             ninf = ninf -1;
         end
-        while (nsup < Npoints) && abs(profile(n2) - profile(nsup))/dL < thresholddeltamax
+        while (nsup < nmax) && abs(profile(n2) - profile(nsup))/dL < thresholddeltamax
             nsup = nsup + 1;
         end
 
