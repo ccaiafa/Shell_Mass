@@ -52,7 +52,7 @@ if (aux < 130 - shell.a) && ( aux > 80 + shell.a)
     n_hdu = fitsinfo(fname);
     %toc
 elseif (aux < 170 - shell.a) && (aux >120 + shell.a)
-    %disp(['shell ',num2str(s), 'en cubo 2']);
+    disp(['shell ', 'en cubo 2']);
     %disp(['loading data-cube...']);
     %tic
     if shell.lat < 0 % Latitudes negativas

@@ -9,14 +9,15 @@ clear
 %load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
 load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
 
-dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
+%dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
+dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
 
 shell_candidates = load_shells_4c_Dvel_100();
 alpha = 0.1:0.01:0.5;
 delta = 0.:0.001:0.1;
 alpha_range = 0.1:0.01:0.5;
 
-Top_Diam_Diff = 1; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = 0.3; % Optimal rmse_miss=60,750,  rmse_mass=62,833
 
 Diff2 = zeros(size(Mass));
 Diff_missing = zeros(size(Mass));
