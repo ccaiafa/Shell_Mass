@@ -1,4 +1,4 @@
-function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
+function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization, perc)
 
 %threshold = 3;
 threshold = 5;
@@ -51,8 +51,9 @@ end
 % if Jmax > size(A.cube,2)
 %     Jmax = size(A.cube,2);
 % end
-vmin = shell.V0 - shell.dV/2; Kmin = round((vmin - A.vel0)/A.dvel + A.k0);
-vmax = shell.V0 + shell.dV/2; Kmax = round((vmax - A.vel0)/A.dvel + A.k0);
+dVred = shell.dV*perc;
+vmin = shell.V0 - dVred/2; Kmin = round((vmin - A.vel0)/A.dvel + A.k0);
+vmax = shell.V0 + dVred/2; Kmax = round((vmax - A.vel0)/A.dvel + A.k0);
 
 Im = A.cube(Imin:Imax,Jmin:Jmax,Kmin:Kmax);
 nI = Imax - Imin +1;

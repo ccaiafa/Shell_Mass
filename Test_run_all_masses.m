@@ -13,5 +13,6 @@ delta_range = 0.:0.001:0.1;
 %delta_range = [0.15, 0.25];
 
 Visualization = 0; % Visualization ONLY works in Cubo 1 (long range 80 - 130)
+perc = 0.7; % 70% of channels
 
-run_all_masses(dataRootPath, @load_shells_4c_Dvel_100, dataOutPath, alpha_range, delta_range, Visualization);
+run_all_masses(dataRootPath, @load_shells_4c_Dvel_100, dataOutPath, alpha_range, delta_range, Visualization, perc);
