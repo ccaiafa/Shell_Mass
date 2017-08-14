@@ -1,6 +1,6 @@
 function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
-threshold = 3;
+threshold = 5;
 %threshold = 5;
 %threshold = 25;
 %threshold = 15;
@@ -252,7 +252,7 @@ for a = alpha
                 end
                 
                 if Visualization
-                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassMax,'%10.5e\n')])
+                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassMin,'%10.5e\n')])
                     pause(0.01)
                 end
 

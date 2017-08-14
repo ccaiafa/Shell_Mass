@@ -8,17 +8,16 @@ clear
 %load 'variables5.mat' % threshold = 5 and L0 = 0.5b
 %load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
 %load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
-load 'variables8.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a  RUN ON MAC OS
+load 'variables8.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA
 
-%dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
-dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
+dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
+%dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
 
-shell_candidates = load_shells_4c_Dvel_100();
-alpha = 0.1:0.01:0.5;
-delta = 0.:0.001:0.1;
-alpha_range = 0.1:0.01:0.5;
+shell_candidates = shell_all;
+alpha = alpha_range;
+delta = delta_range;
 
-Top_Diam_Diff = 0.3; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = 0.6; % Optimal rmse_miss=60,750,  rmse_mass=62,833
 
 Diff2 = zeros(size(Mass));
 Diff_missing = zeros(size(Mass));
@@ -31,22 +30,25 @@ Error_global = zeros(N,1);
 Global_est_mass = zeros(N,1);
 
 for n=1:N
-%     A = abs(Mass(:,:,n) - Missing_Mass(:,:,n)); % Mass exceeds x% of Missing Mass
-%     %A(A<0) = Inf;
-%     A(isnan(A)) = Inf;
-%     
-%     % Restrict tensor A to the cases where the estimated Diameter is close to the real
-%     % one
-%     %% Keep, for example, 10% Top most similar Diameter region.
+    A = abs(Mass(:,:,n) - Missing_Mass(:,:,n)); % Mass exceeds x% of Missing Mass
+    %A(A<0) = Inf;
+    A(isnan(A)) = Inf;
+    
+    % Restrict tensor A to the cases where the estimated Diameter is close to the real
+    % one
+    %% Keep, for example, 10% Top most similar Diameter region.
 %     B = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
-%     [~, index] = sort(B(:),'ascend');
-%     
-%     index = index(round(Top_Diam_Diff*length(index)):end);
-%     A(ind2sub(size(A),index)) = Inf;
+      B = abs((Area(:,:,n) - pi*shell_candidates{n}.a*shell_candidates{n}.b)/(pi*shell_candidates{n}.a*shell_candidates{n}.b));
+     [~, index] = sort(B(:),'ascend');
+     
+     index = index(round(Top_Diam_Diff*length(index)):end);
+     A(ind2sub(size(A),index)) = Inf;
 
-    A = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
-       
+%     A1 = abs((Area(:,:,n) - pi*shell_candidates{n}.a*shell_candidates{n}.b)/(pi*shell_candidates{n}.a*shell_candidates{n}.b));
+%     A2 = abs((Mass(:,:,n) - Missing_Mass(:,:,n))./Mass(:,:,n)); % Mass exceeds x% of Missing Mass  
+    
     % find minimum difference between mass and missing mass
+    %Diff_missing(:,:,n) = A1;
     Diff_missing(:,:,n) = A;
     [val,ind] = min(reshape(Diff_missing(:,:,n),[Na*Nd,1]));
     [ia,id] = ind2sub([Na,Nd],ind);
@@ -64,7 +66,7 @@ masses = [];
 for n=1:N
     %masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
     masses = [masses; shell_candidates{n}.MassMin, local_auto{n}.Missing, local_auto{n}.Mass];
-    x{n} = shell_candidates{n}.name;
+    x{n} = [num2str(n),'=',shell_candidates{n}.name];
 end
 figure
 bar1 = bar(masses);
@@ -84,12 +86,11 @@ title(['Top ',num2str(100*Top_Diam_Diff),'%,  rmse Missing=',num2str(rmse_Miss),
 
 %% Visualize structures
 Visualization = 1;
-
+figure
 for n=1:N
-    figure
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
     [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization);
-
+    clf('reset')
 end
 
 stop
