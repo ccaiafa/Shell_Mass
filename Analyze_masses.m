@@ -8,7 +8,8 @@ clear
 %load 'variables5.mat' % threshold = 5 and L0 = 0.5b
 %load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
 %load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
-load 'variables8.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA
+%load 'variables8.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA
+load 'variables9.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA, 70% of channels
 
 dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
 %dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
@@ -17,7 +18,8 @@ shell_candidates = shell_all;
 alpha = alpha_range;
 delta = delta_range;
 
-Top_Diam_Diff = 0.6; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = 0.25; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+perc = 0.7;
 
 Diff2 = zeros(size(Mass));
 Diff_missing = zeros(size(Mass));
@@ -65,7 +67,7 @@ end
 masses = [];
 for n=1:N
     %masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
-    masses = [masses; shell_candidates{n}.MassMin, local_auto{n}.Missing, local_auto{n}.Mass];
+    masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
     x{n} = [num2str(n),'=',shell_candidates{n}.name];
 end
 figure
@@ -74,31 +76,22 @@ set(gca, 'XTick', 1:N, 'XTickLabel', x);
 ax = gca; 
 ax.XTickLabelRotation = 45;
 set(bar1(1),'DisplayName','By Hand (MassMin)');
-set(bar1(2),'DisplayName','Algorithm (Mass)');
+set(bar1(2),'DisplayName','By Hand (MassMax)');
 set(bar1(3),'DisplayName','Algorithm (MissingMass)');
+set(bar1(4),'DisplayName','Algorithm (Mass)');
 
-rmse_Mass = sqrt(nanmean((masses(:,1)-masses(:,3)).^2));
-rmse_Miss = sqrt(nanmean((masses(:,1)-masses(:,2)).^2));
+rmse_Mass = sqrt(nanmean((masses(:,2)-masses(:,4)).^2));
+rmse_Miss = sqrt(nanmean((masses(:,1)-masses(:,3)).^2));
 
 % Create legend
 legend('show');
 title(['Top ',num2str(100*Top_Diam_Diff),'%,  rmse Missing=',num2str(rmse_Miss),', rmse Mass=', num2str(rmse_Mass)])
 
-%% Visualize structures
-Visualization = 1;
-figure
-for n=1:N
-    [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
-    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization);
-    clf('reset')
-end
-
-stop
 %% Scatter plot de MIssing Mass
 figure
 scatter(masses(:,1),masses(:,3),'DisplayName','Missing Mass')
 hold on
-%scatter(masses(:,2),masses(:,4),'DisplayName','Shell Mass')
+scatter(masses(:,2),masses(:,4),'DisplayName','Shell Mass')
 % Create ylabel
 ylabel({'Automatically estimated'});
 % Create xlabel
@@ -111,6 +104,18 @@ rango_masas = 0:1000:300000;
 plot(rango_masas, rango_masas,'k')
 %plot(rango_masas, 0.6*rango_masas,'g')
 %plot(rango_masas, 1.6*rango_masas,'g')
+
+%% Visualize structures
+Visualization = 1;
+figure
+for n=1:N
+    [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
+    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization, perc);
+    clf('reset')
+end
+
+stop
+
 
 
 
