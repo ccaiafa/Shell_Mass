@@ -1,7 +1,7 @@
 function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
-threshold = 3;
-%threshold = 5;
+%threshold = 3;
+threshold = 5;
 %threshold = 25;
 %threshold = 15;
 thresholddeltamax = 10;
@@ -312,13 +312,15 @@ end
 end
 
 function  [val,ind] = local_max(profile,threshold,thresholddeltamax,thresholdmax,L,shell)
-L0 = shell.b*0; % start searching at xx% of parameter b (ellipse semiaxis)
+L0 = shell.b*0.5; % start searching at xx% of parameter b (ellipse semiaxis)
 Lmax = shell.a*1.25; % stop searching at 125% of parameter a (ellipse semiaxis)
 n2found = 0;
 Npoints = length(profile);
 dL = L/Npoints;
 n0 = ceil(L0/dL);
 nmax = ceil(Lmax/dL);
+%n0 = 1;
+%nmax = Npoints;
 for n2=n0:nmax
     if n2 > 1 
         if ((profile(n2) - profile(n2-1))/dL > threshold) && ~n2found;%missing
