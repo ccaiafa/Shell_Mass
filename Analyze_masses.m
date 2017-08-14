@@ -7,7 +7,8 @@ clear
 %load 'variables4.mat' % threshold = 15 and L0 = 0.5b
 %load 'variables5.mat' % threshold = 5 and L0 = 0.5b
 %load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
-load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
+%load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
+load 'variables8.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a  RUN ON MAC OS
 
 dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
 
@@ -29,20 +30,21 @@ Error_global = zeros(N,1);
 Global_est_mass = zeros(N,1);
 
 for n=1:N
-    A = abs(Mass(:,:,n) - Missing_Mass(:,:,n)); % Mass exceeds x% of Missing Mass
-    %A(A<0) = Inf;
-    A(isnan(A)) = Inf;
-    
-    % Restrict tensor A to the cases where the estimated Diameter is close to the real
-    % one
-    %% Keep, for example, 10% Top most similar Diameter region.
-    B = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
-    [~, index] = sort(B(:),'ascend');
-    
-    index = index(round(Top_Diam_Diff*length(index)):end);
-    A(ind2sub(size(A),index)) = Inf;
-    
-    
+%     A = abs(Mass(:,:,n) - Missing_Mass(:,:,n)); % Mass exceeds x% of Missing Mass
+%     %A(A<0) = Inf;
+%     A(isnan(A)) = Inf;
+%     
+%     % Restrict tensor A to the cases where the estimated Diameter is close to the real
+%     % one
+%     %% Keep, for example, 10% Top most similar Diameter region.
+%     B = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
+%     [~, index] = sort(B(:),'ascend');
+%     
+%     index = index(round(Top_Diam_Diff*length(index)):end);
+%     A(ind2sub(size(A),index)) = Inf;
+
+    A = abs((Diameter(:,:,n) - 2*shell_candidates{n}.a)/(2*shell_candidates{n}.a));
+       
     % find minimum difference between mass and missing mass
     Diff_missing(:,:,n) = A;
     [val,ind] = min(reshape(Diff_missing(:,:,n),[Na*Nd,1]));
