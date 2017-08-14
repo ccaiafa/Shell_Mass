@@ -1,4 +1,4 @@
-function [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
+function [ mass, missing_mass, Area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
 threshold = 3;
 %threshold = 5;
@@ -14,7 +14,7 @@ K = header.PrimaryData.Size(3);
 
 mass = zeros(length(alpha),length(delta));
 missing_mass = zeros(length(alpha),length(delta));
-diameter = zeros(length(alpha),length(delta));
+area = zeros(length(alpha),length(delta));
 
 A.cube = cube;
 clear cube;
@@ -158,7 +158,7 @@ for a = alpha
     if isempty(x_new)%|| (abs(2*dev(1)-shell.a)/shell.a > 0.5)||imag(dev(1))
         mass(inda,:) = NaN;
         missing_mass(inda,:) = NaN;
-        diameter(inda,:) = NaN;
+        area(inda,:) = NaN;
     else
 
         %% Buscar paredes
@@ -175,9 +175,9 @@ for a = alpha
             if size(outwall,1) < 2
                 mass(inda,indd) = NaN;
                 missing_mass(inda,indd) = NaN;
-                diameter(inda,indd) = NaN;
+                area(inda,indd) = NaN;
             else
-                diameter(inda,indd) = 2*dev(1);
+                area(inda,indd) = pi*dev(1)*dev(2);
                 if Visualization
                     show_map(fig1,1,[longmin longmax],[latmin latmax], sub, cref)
                     graficar_puntos(fig1,1,x_new,'o',[1 0 0])
