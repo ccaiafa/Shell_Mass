@@ -11,7 +11,7 @@ Ndelta = length(delta_range);
 
 Mass = zeros(Nalpha,Ndelta,N); % HI-shell mass for every parameter (alpha,delta)
 Missing_Mass = zeros(Nalpha,Ndelta,N); % Missing mass for every parameter (alpha,delta)
-Diameter = zeros(Nalpha,Ndelta,N);
+Area = zeros(Nalpha,Ndelta,N);
 
 if Visualization
     fig = figure('Position',[10,600,600,400]);
@@ -28,7 +28,7 @@ parfor s=1:N
     
     % Comute mass associated to HI-shell n
     %disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
-    [Mass(:,:,s), Missing_Mass(:,:,s), Diameter(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization);
+    [Mass(:,:,s), Missing_Mass(:,:,s), Area(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization);
 end
 
 save('variables8.mat')
@@ -52,7 +52,7 @@ if (aux < 130 - shell.a) && ( aux > 80 + shell.a)
     n_hdu = fitsinfo(fname);
     %toc
 elseif (aux < 170 - shell.a) && (aux >120 + shell.a)
-    %disp(['shell ',num2str(s), 'en cubo 2']);
+    disp(['shell ', 'en cubo 2']);
     %disp(['loading data-cube...']);
     %tic
     if shell.lat < 0 % Latitudes negativas
