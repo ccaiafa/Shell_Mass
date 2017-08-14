@@ -1,4 +1,4 @@
-function [ mass, missing_mass, Area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
+function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization)
 
 threshold = 3;
 %threshold = 5;
