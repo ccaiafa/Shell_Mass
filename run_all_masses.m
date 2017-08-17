@@ -28,7 +28,7 @@ parfor s=1:N
     
     % Comute mass associated to HI-shell n
     %disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
-    [Mass(:,:,s), Missing_Mass(:,:,s), Area(:,:,s)] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization, perc);
+    [Mass(:,:,s), Missing_Mass(:,:,s), Area(:,:,s), Temperatures{s}] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization, perc);
 end
 
 save('variables9.mat')

@@ -1,4 +1,4 @@
-function [ mass, missing_mass, area ] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization, perc)
+function [ mass, missing_mass, area , Temperatures] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization, perc)
 
 %threshold = 3;
 threshold = 5;
@@ -15,6 +15,10 @@ K = header.PrimaryData.Size(3);
 mass = zeros(length(alpha),length(delta));
 missing_mass = zeros(length(alpha),length(delta));
 area = zeros(length(alpha),length(delta));
+Temperatures.img = zeros(length(alpha),length(delta));
+Temperatures.shell = zeros(length(alpha),length(delta));
+Temperatures.backg = zeros(length(alpha),length(delta));
+Temperatures.miss = zeros(length(alpha),length(delta));
 
 A.cube = cube;
 clear cube;
@@ -258,6 +262,9 @@ for a = alpha
                 end
 
                 mass(inda,indd) = Masa;
+                Temperatures.img(inda,indd) = mean(sub(:)); 
+                Temperatures.shell(inda,indd) = mean(sub_corrected(:));
+                Temperatures.backg(inda,indd) = mean(sub_back(:)); 
                 
                 %%
                 sub_back_with_missing = background_with_missing(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
@@ -298,6 +305,7 @@ for a = alpha
                 end
 
                 missing_mass(inda,indd) = Masa_missing;
+                Temperatures.miss(inda,indd) = mean(sub_missing(:)); 
                 
                 
                 
