@@ -89,26 +89,54 @@ title(['Top ',num2str(100*Top_Diam_Diff),'%,  rmse Missing=',num2str(rmse_Miss),
 
 %% Scatter plot de MIssing Mass
 figure
-scatter(masses(:,1),masses(:,3),'DisplayName','Missing Mass')
 hold on
+scatter(masses(:,1),masses(:,3),'DisplayName','Missing Mass') 
 scatter(masses(:,2),masses(:,4),'DisplayName','Shell Mass')
-% Create ylabel
+%scatter([masses(:,1);masses(:,2)],[masses(:,3);masses(:,4)],'DisplayName','Mass')
 ylabel({'Automatically estimated'});
 % Create xlabel
 xlabel({'Estimated by hand'});
-ylim([0 300000]);
-xlim([0 300000]);
+ylim([0 3000000]);
+xlim([0 3000000]);
 
-rango_masas = 0:1000:300000;
+rango_masas = 0:1000:3000000;
 
-plot(rango_masas, rango_masas,'k')
+plot(rango_masas, rango_masas,'k','DisplayName','Perfect estimation')
+set(gca,'DataAspectRatio',[1499500 1499500 1],'XMinorTick','on','XScale','log','YMinorTick','on','YScale','log')
+legend(gca,'show');
 %plot(rango_masas, 0.6*rango_masas,'g')
 %plot(rango_masas, 1.6*rango_masas,'g')
+
+%% Compute Errors
+diff_mass = 100*(masses(:,2) - masses(:,4))./masses(:,2);
+diff_missing = 100*(masses(:,1) - masses(:,3))./masses(:,1);
+figure
+bar2 = bar([diff_mass, diff_missing]);
+set(gca, 'XTick', 1:N, 'XTickLabel', x);
+ax = gca; 
+ax.XTickLabelRotation = 45;
+set(bar2(1),'DisplayName','Error Mass');
+set(bar2(2),'DisplayName','Error Missing');
+legend('show');
+
+%% Compute Differences
+hand_diff = 100*(masses(:,2) - masses(:,1))./masses(:,2);
+alg_diff = 100*(masses(:,4) - masses(:,3))./masses(:,3);
+figure
+bar3 = bar([hand_diff, alg_diff]);
+set(gca, 'XTick', 1:N, 'XTickLabel', x);
+ax = gca; 
+ax.XTickLabelRotation = 45;
+set(bar3(1),'DisplayName','Diff by Hand');
+set(bar3(2),'DisplayName','Diff by Algorithm');
+legend('show');
+
 
 %% Visualize structures
 Visualization = 1;
 figure
-for n=1:N
+for n=59
+%for n=1:N
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
     [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization, perc);
     clf('reset')
