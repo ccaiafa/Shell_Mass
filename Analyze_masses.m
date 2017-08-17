@@ -13,6 +13,7 @@ load 'variables9.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute ARE
 
 dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
 %dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
+dataOutPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Results/4c_Dvel_100/';
 
 shell_candidates = shell_all;
 alpha = alpha_range;
@@ -30,6 +31,11 @@ Error_auto_Mass = zeros(N,1);
 Error_auto_Missing = zeros(N,1);
 Error_global = zeros(N,1);
 Global_est_mass = zeros(N,1);
+
+Temp_img = zeros(N,1);
+Temp_shell = zeros(N,1);
+Temp_backg = zeros(N,1);
+Temp_miss = zeros(N,1);
 
 for n=1:N
     A = abs(Mass(:,:,n) - Missing_Mass(:,:,n)); % Mass exceeds x% of Missing Mass
@@ -62,14 +68,24 @@ for n=1:N
     local_auto{n}.Mass = Mass(ia,id,n);
     local_auto{n}.Missing = Missing_Mass(ia,id,n);  
     Error_auto_Missing(n) = abs(Missing_Mass(local_auto{n}.ia,local_auto{n}.id,n) - shell_candidates{n}.MassMin)/shell_candidates{n}.MassMin;
+    Temp_img(n) = Temperatures{n}.img(ia,id);
+    Temp_shell(n) = Temperatures{n}.shell(ia,id);
+    Temp_backg(n) = Temperatures{n}.backg(ia,id);
+    Temp_miss(n) = Temperatures{n}.miss(ia,id);
 end
 
+filename = fullfile(dataOutPath,'Temperatures.txt');
+fileID = fopen(filename,'w');
+fprintf(fileID,'Name   \t Img   \t Shell   \t Backg   \t Miss \n',A);
 masses = [];
 for n=1:N
     %masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
     masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
     x{n} = [num2str(n),'=',shell_candidates{n}.name];
+    fprintf(fileID,'%s   \t %12.8f \t %12.8f \t %12.8f \t %12.8f\n', shell_all{n}.name, Temp_img(n), Temp_shell(n), Temp_backg(n), Temp_miss(n));
+    
 end
+fclose(fileID);
 figure
 bar1 = bar(masses);
 set(gca, 'XTick', 1:N, 'XTickLabel', x);
