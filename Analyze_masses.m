@@ -151,7 +151,7 @@ legend('show');
 %% Visualize structures
 Visualization = 1;
 figure
-for n=59
+for n=15:N
 %for n=1:N
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
     [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization, perc);
