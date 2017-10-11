@@ -9,7 +9,8 @@ clear
 %load 'variables6.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a
 %load 'variables7.mat' % threshold = 3 and L0 = 0 and Lmax = 1.25a
 %load 'variables8.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA
-load 'variables9.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA, 70% of channels
+%load 'variables9.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA, 70% of channels
+load 'variables10.mat' % threshold = 5 and L0 = 0.5b and Lmax = 1.25a compute AREA, 70% of channels (CORRECTED INPUT)
 
 dataRootPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Data/fits/';
 %dataRootPath = '/N/dc2/projects/lifebid/code/ccaiafa/Shells/data'; %Karst path
@@ -20,7 +21,7 @@ alpha = alpha_range;
 delta = delta_range;
 
 Top_Diam_Diff = 0.25; % Optimal rmse_miss=60,750,  rmse_mass=62,833
-perc = 0.7;
+perc = 0.7; % Velocity percentages
 
 Diff2 = zeros(size(Mass));
 Diff_missing = zeros(size(Mass));
@@ -67,32 +68,63 @@ for n=1:N
     local_auto{n}.id = id;
     local_auto{n}.Mass = Mass(ia,id,n);
     local_auto{n}.Missing = Missing_Mass(ia,id,n);  
-    Error_auto_Missing(n) = abs(Missing_Mass(local_auto{n}.ia,local_auto{n}.id,n) - shell_candidates{n}.MassMin)/shell_candidates{n}.MassMin;
+    Error_auto_Missing(n) = abs(Missing_Mass(local_auto{n}.ia,local_auto{n}.id,n) - shell_candidates{n}.MassMiss)/shell_candidates{n}.MassMiss;
     Temp_img(n) = Temperatures{n}.img(ia,id);
     Temp_shell(n) = Temperatures{n}.shell(ia,id);
     Temp_backg(n) = Temperatures{n}.backg(ia,id);
     Temp_miss(n) = Temperatures{n}.miss(ia,id);
 end
 
+%% Print Temperatures
 filename = fullfile(dataOutPath,'Temperatures.txt');
 fileID = fopen(filename,'w');
-fprintf(fileID,'Name   \t Img   \t Shell   \t Backg   \t Miss \n',A);
+fprintf(fileID,'Name   \t Shell  \n',A);
 masses = [];
 for n=1:N
-    %masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
-    masses = [masses; shell_candidates{n}.MassMin, shell_candidates{n}.MassMax, local_auto{n}.Missing, local_auto{n}.Mass];
+    %masses = [masses; shell_candidates{n}.MassMiss, shell_candidates{n}.MassShell, local_auto{n}.Missing, local_auto{n}.Mass];
+    masses = [masses; shell_candidates{n}.MassMiss, shell_candidates{n}.MassShell, local_auto{n}.Missing, local_auto{n}.Mass];
     x{n} = [num2str(n),'=',shell_candidates{n}.name];
-    fprintf(fileID,'%s   \t %12.8f \t %12.8f \t %12.8f \t %12.8f\n', shell_all{n}.name, Temp_img(n), Temp_shell(n), Temp_backg(n), Temp_miss(n));
+    fprintf(fileID,'%s   \t %12.8f \n', shell_all{n}.name, Temp_shell(n));
     
 end
 fclose(fileID);
+
+%% Print Masses
+filename = fullfile(dataOutPath,'Masses.txt');
+fileID = fopen(filename,'w');
+fprintf(fileID,'Name   \t Mass (hand)  \t Miss (hand) \t Mass (alg)  \t Miss (alg)\n',A);
+
+for n=1:N
+    fprintf(fileID,'%s   \t %12.1f \t %12.1f \t %12.1f \t %12.1f \n', shell_all{n}.name, shell_candidates{n}.MassShell, shell_candidates{n}.MassMiss, local_auto{n}.Mass, local_auto{n}.Missing);
+end
+fclose(fileID);
+
+%% Calcular R2
+%masses = log(masses);
+Min_mean = mean(masses(:,1),1);
+SSres_Min = sum((masses(:,1)-masses(:,3)).^2,1);
+SStot_Min = sum((masses(:,3)-Min_mean).^2,1);
+R2_Min = 1 - SSres_Min/SStot_Min;
+
+Mass_mean = mean(masses(:,2),1);
+SSres_Mass = sum((masses(:,2)-masses(:,4)).^2,1);
+SStot_Mass = sum((masses(:,2)-Mass_mean).^2,1);
+R2_Mass = 1 - SSres_Mass/SStot_Mass;
+
+SSres_datos = sum((masses(:,1)-masses(:,2)).^2,1);
+SStot_datos = sum((masses(:,2)-Min_mean).^2,1);
+R2_datos = 1 - SSres_datos/SStot_datos;
+
+disp(['Coeficiente de determinacion R2:', 'Missing=',num2str(R2_Min),', Mass=',num2str(R2_Mass),', Datos=',num2str(R2_datos)]);
+
+
 figure
 bar1 = bar(masses);
 set(gca, 'XTick', 1:N, 'XTickLabel', x);
 ax = gca; 
 ax.XTickLabelRotation = 45;
-set(bar1(1),'DisplayName','By Hand (MassMin)');
-set(bar1(2),'DisplayName','By Hand (MassMax)');
+set(bar1(1),'DisplayName','By Hand (MassMiss)');
+set(bar1(2),'DisplayName','By Hand (MassShell)');
 set(bar1(3),'DisplayName','Algorithm (MissingMass)');
 set(bar1(4),'DisplayName','Algorithm (Mass)');
 
@@ -219,11 +251,11 @@ ylabel('\delta')
 
 
 for n=1:N
-%     masa_real_mean = (shell_candidates{n}.MassMin + shell_candidates{n}.MassMax)/2;
-%     masa_real_min = shell_candidates{n}.MassMin;
-%     masa_real_max = shell_candidates{n}.MassMax;
+%     masa_real_mean = (shell_candidates{n}.MassMiss + shell_candidates{n}.MassShell)/2;
+%     masa_real_min = shell_candidates{n}.MassMiss;
+%     masa_real_max = shell_candidates{n}.MassShell;
     
-    masa_real = shell_candidates{n}.MassMax;
+    masa_real = shell_candidates{n}.MassShell;
     
     [val,ind] = max(Mass(:,:,n));
     [masa_est_max, ind2] = max(val);
