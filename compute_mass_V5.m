@@ -264,12 +264,12 @@ for a = alpha
                 mass(inda,indd) = Masa;
                 Temperatures.img(inda,indd) = mean(sub(:)); 
                 %Temperatures.shell(inda,indd) = mean(sub_corrected(:));
-                nansub_corrected = sub_corrected;
-                nansub_corrected(nansub_corrected==0)=NaN;
-                Temshell = nanmean(nansub_corrected(:))
+                
+                sub_corrected(sub_corrected==0)=NaN;
+                
                 
                 Temperatures.backg(inda,indd) = mean(sub_back(:)); 
-                Temperatures.shell(inda,indd) = mean(sub_corrected(:));
+                Temperatures.shell(inda,indd) = nanmean(sub_corrected(:));
                 %%
                 sub_back_with_missing = background_with_missing(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
                 
