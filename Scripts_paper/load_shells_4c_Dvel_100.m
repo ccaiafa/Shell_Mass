@@ -805,8 +805,8 @@ function [ shells ] = load_shells_4c_Dvel_100()
  'V0',  -77300.0000     ,...
  'dV',   16500.0000     ,...
  'D',   7.90000010     ,...
- 'MassMiss',   332000.000     , ... % Masas solares
- 'MassShell',   156000.000     ... % Masas solares
+ 'MassMiss',   153000.000     , ... % Masas solares
+ 'MassShell',   192000.000     ... % Masas solares
  );% area pixel grados^2   1.55999996E-02
 
  shells{55} = struct('name',{'GS105-12-040'},...
@@ -928,7 +928,6 @@ function [ shells ] = load_shells_4c_Dvel_100()
  'MassMiss',   35000.0000     , ... % Masas solares
  'MassShell',   65100.0000     ... % Masas solares
  );% area pixel grados^2   9.99999978E-03
-
 
 end
 
