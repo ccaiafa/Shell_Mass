@@ -20,7 +20,7 @@ end
 %% Compute masses 
 disp('Computing masses')
 parfor s=1:N
-%for s=59:N
+%for s=1:N
     %fprintf('.')
     disp([num2str(s),'/',num2str(N)])
     shell = shell_all{s};
@@ -36,8 +36,8 @@ disp(['SAVING RESULTS TO FILE: ',OutputFile])
 save(fullfile(dataOutPath,OutputFile), '-v7.3')
 
 
-save('variables10.mat')
-Diff = abs(Mass - Missing_Mass);
+%save('variables10.mat')
+%Diff = abs(Mass - Missing_Mass);
 
 
 end
