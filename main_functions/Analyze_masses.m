@@ -1,4 +1,4 @@
-function [] = Analyze_masses(InputPath, data_type,dataRootPath,dataOutPath)
+function [] = Analyze_masses(InputPath, data_type,dataRootPath1,dataOutPath1)
 
 
 %load 'variables.mat'
@@ -17,8 +17,11 @@ function [] = Analyze_masses(InputPath, data_type,dataRootPath,dataOutPath)
 %dataOutPath = '/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/Results/4c_Dvel_100/';
 
 
-Results_file = fullfile(InputPath,strcat('Results_',data_type));
+Results_file = fullfile(InputPath,strcat('Results_',data_type,'.mat'));
 load(Results_file);
+
+dataRootPath = dataRootPath1;
+dataOutPath = dataOutPath1;
 
 shell_candidates = shell_all;
 alpha = alpha_range;

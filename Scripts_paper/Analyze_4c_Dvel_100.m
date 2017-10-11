@@ -7,7 +7,7 @@ addpath(genpath(code_path));
 
 cd ../..
 root = pwd;
-InputPath = strcat(root,'/Results');
+InputPath = strcat(root,'/code/Shell_Mass/Results');
 dataRootPath = strcat(root,'/data');
 
 dataOutPath = InputPath;
