@@ -3,14 +3,20 @@ function [scan,x,devant] = depurar_puntos_V5(scan,x,fig1,subplotnr,longmin,longm
 deltapuntos = 1;
 while (deltapuntos ~= 0) && (size(x,1))>5 %(~isempty(x))
     %if ~isempty(x)
-        [dev(1), dev(2), xc, yc, tita,error,error1] = ellipse_fit_opt_V2(x(:,1), x(:,2));
+    [dev(1), dev(2), xc, yc, tita,error,error1] = ellipse_fit_opt_V2(x(:,1), x(:,2));
     
-        if (imag(xc) || imag(yc) || (error == Inf))
-            scan = clear_flags(scan);
-            x = [];
-            deltapuntos = 0;
-        else
-    
+    if (imag(xc) || imag(yc) || (error == Inf))
+        %scan = clear_flags(scan);
+        %x = [];
+        deltapuntos = 0;
+        dev = real(dev);
+%         xc = real(xc);
+%         yc = real(yc);
+%         tita = real(tita);
+%         error = real(error);
+%         error1 = real(error1);
+    else
+        
         center = mean(x);
         
         if Visualization
@@ -27,9 +33,10 @@ while (deltapuntos ~= 0) && (size(x,1))>5 %(~isempty(x))
             [xep(:,1),xep(:,2)] = ellipse(dev(1),dev(2),tita*180/pi,center(1),center(2),color_puntos,P,Visualization);
         end
         
-        devant = dev;
-        [scan, x, deltapuntos ] = depurar(scan, xep, alpha*dev(1)); 
-        end
+        
+        [scan, x, deltapuntos ] = depurar(scan, xep, alpha*dev(1));
+    end
+    devant = dev;
 end
 
 end

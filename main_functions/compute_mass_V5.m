@@ -257,7 +257,7 @@ for a = alpha
                 end
                 
                 if Visualization
-                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassMax,'%10.5e\n')])
+                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassShell,'%10.5e\n')])
                     pause(0.01)
                 end
 
@@ -331,7 +331,7 @@ n2found = 0;
 Npoints = length(profile);
 dL = L/Npoints;
 n0 = ceil(L0/dL);
-nmax = ceil(Lmax/dL);
+nmax = min(ceil(Lmax/dL),Npoints);
 %n0 = 1;
 %nmax = Npoints;
 for n2=n0:nmax

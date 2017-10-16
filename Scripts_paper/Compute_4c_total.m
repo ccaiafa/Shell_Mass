@@ -1,6 +1,7 @@
 % 
 clear
 clc
+restoredefaultpath
 
 cd ..
 code_path = pwd;

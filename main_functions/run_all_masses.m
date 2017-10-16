@@ -20,7 +20,7 @@ end
 %% Compute masses 
 disp('Computing masses')
 parfor s=1:N
-%for s=1:N
+%for s=99:N
     %fprintf('.')
     disp([num2str(s),'/',num2str(N)])
     shell = shell_all{s};
