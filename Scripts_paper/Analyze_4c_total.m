@@ -1,4 +1,6 @@
 function [] = Analyze_4c_total()
+restoredefaultpath
+
 data_type = '4c_total';
 
 cd ..

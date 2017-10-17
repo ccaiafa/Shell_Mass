@@ -1,4 +1,6 @@
 function [] = Analyze_3c_total()
+restoredefaultpath
+
 data_type = '3c_total';
 
 cd ..
