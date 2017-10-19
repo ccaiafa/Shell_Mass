@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+#PBS -l nodes=1:ppn=16 
+#PBS -l walltime=24:00:00 
+#PBS -m ae 
+#PBS -M ccaiafa@iu.edu 
+#PBS -N compute_4c
+#PBS -V 
+#PBS -o /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/compute_4c.out 
+#PBS -e /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/compute_4c.err 
+
+module load matlab 
+cd /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/
+
+matlab -nodesktop -nosplash -r 'Compute_4c_total'  
