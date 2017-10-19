@@ -240,7 +240,8 @@ for a = alpha
 
                 %% Calculo de masa
                 C = 1.823e18;
-                dVT = (Kmax-Kmin+1)*A.dvel/1000; % en Km/s
+                %dVT = (Kmax-Kmin+1)*A.dvel/1000; % en Km/s
+                dVT = shell.dV/1000; % en Km/s
                 %Omega = 4.759647e-6 ; % sr
                 Omega = abs(A.dlong*A.dlat)*((pi/180)^2);
                 constd = shell.D*3.085647758e21; % cm
@@ -287,7 +288,8 @@ for a = alpha
                 
                 %% Calculo de missing mass y masas picos
                 C = 1.823e18;
-                dVT = (Kmax-Kmin+1)*A.dvel/1000; % en Km/s
+                %dVT = (Kmax-Kmin+1)*A.dvel/1000; % en Km/s
+                dVT = shell.dV/1000; % en Km/s
                 %Omega = 4.759647e-6 ; % sr
                 Omega = abs(A.dlong*A.dlat)*((pi/180)^2);
                 constd = shell.D*3.085647758e21; % cm
