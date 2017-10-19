@@ -1,0 +1,788 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Computing masses
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 12 workers.
+125/309
+72/309
+18/309
+141/309
+54/309
+168/309
+155/309
+108/309
+90/309
+191/309
+36/309
+180/309
+89/309
+107/309
+35/309
+71/309
+17/309
+154/309
+124/309
+53/309
+shell en cubo 2
+190/309
+shell en cubo 2
+179/309
+140/309
+shell en cubo 2
+167/309
+106/309
+123/309
+153/309
+16/309
+70/309
+34/309
+88/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.854450e-16.
+> In ellipse_fit_opt_V2 (line 7)
+139/309
+52/309
+shell en cubo 2
+189/309
+105/309
+shell en cubo 2
+166/309
+122/309
+15/309
+87/309
+69/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+33/309
+shell en cubo 2
+178/309
+138/309
+152/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.503389e-16.
+> In ellipse_fit_opt_V2 (line 7)
+shell en cubo 2
+51/309
+121/309
+68/309
+shell en cubo 2
+165/309
+104/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.503389e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+151/309
+86/309
+32/309
+14/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.157538e-16.
+> In ellipse_fit_opt_V2 (line 7)
+shell en cubo 2
+50/309
+shell en cubo 2
+177/309
+shell en cubo 2
+188/309
+shell en cubo 2
+164/309
+13/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.157538e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+31/309
+137/309
+49/309
+150/309
+120/309
+85/309
+67/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.101562e-17.
+> In ellipse_fit_opt_V2 (line 7)
+103/309
+shell en cubo 2
+163/309
+30/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.101562e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+66/309
+48/309
+136/309
+shell en cubo 2
+187/309
+84/309
+119/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.088003e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.088003e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.098095e-16.
+> In ellipse_fit_opt_V2 (line 7)
+102/309
+149/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.817971e-16.
+> In ellipse_fit_opt_V2 (line 7)
+12/309
+65/309
+shell en cubo 2
+162/309
+135/309
+83/309
+shell en cubo 2
+176/309
+shell en cubo 2
+186/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.817971e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+47/309
+29/309
+148/309
+11/309
+101/309
+118/309
+161/309
+64/309
+46/309
+shell en cubo 2
+175/309
+10/309
+82/309
+134/309
+28/309
+shell en cubo 2
+185/309
+63/309
+160/309
+100/309
+147/309
+117/309
+62/309
+133/309
+9/309
+81/309
+shell en cubo 2
+45/309
+shell en cubo 2
+184/309
+27/309
+146/309
+159/309
+99/309
+116/309
+shell en cubo 2
+174/309
+8/309
+shell en cubo 2
+44/309
+80/309
+shell en cubo 2
+61/309
+26/309
+145/309
+98/309
+132/309
+115/309
+158/309
+shell en cubo 2
+173/309
+60/309
+25/309
+shell en cubo 2
+43/309
+144/309
+79/309
+97/309
+shell en cubo 2
+183/309
+7/309
+114/309
+131/309
+157/309
+shell en cubo 2
+59/309
+143/309
+24/309
+78/309
+96/309
+shell en cubo 2
+172/309
+6/309
+shell en cubo 2
+182/309
+113/309
+130/309
+shell en cubo 2
+42/309
+142/309
+95/309
+5/309
+156/309
+77/309
+112/309
+shell en cubo 2
+23/309
+129/309
+shell en cubo 2
+181/309
+shell en cubo 2
+58/309
+shell en cubo 2
+41/309
+94/309
+76/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.752162e-16.
+> In ellipse_fit_opt_V2 (line 7)
+shell en cubo 2
+22/309
+111/309
+shell en cubo 2
+171/309
+57/309
+4/309
+shell en cubo 2
+40/309
+93/309
+128/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.752162e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.752162e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+75/309
+3/309
+56/309
+shell en cubo 2
+21/309
+110/309
+210/309
+shell en cubo 2
+209/309
+shell en cubo 2
+170/309
+219/309
+218/309
+74/309
+201/309
+shell en cubo 2
+200/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.083556e-17.
+> In ellipse_fit_opt_V2 (line 7)
+39/309
+92/309
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.111393e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 158)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  2.115684e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  3.400784e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.165442e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.165442e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.917017e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.917017e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.917017e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.917017e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.917017e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  7.980982e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  4.066306e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.537590e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.006324e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.006324e-17.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.534094e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+127/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+shell en cubo 2
+20/309
+shell en cubo 2
+208/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+73/309
+109/309
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.753075e-16.
+> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+91/309
+shell en cubo 2
+169/309
+38/309
+shell en cubo 2
+199/309
+55/309
+217/309
+2/309
+126/309
+shell en cubo 2
+19/309
+216/309
+1/309
+37/309
+shell en cubo 2
+shell en cubo 2
+207/309
+shell en cubo 2
+198/309
+234/309
+233/309
+215/309
+227/309
+226/309
+241/309
+240/309
+shell en cubo 2
+206/309
+263/309
+262/309
+253/309
+252/309
+shell en cubo 2
+197/309
+247/309
+246/309
+258/309
+257/309
+225/309
+shell en cubo 2
+214/309
+232/309
+261/309
+267/309
+266/309
+shell en cubo 2
+205/309
+shell en cubo 2
+196/309
+271/309
+270/309
+231/309
+251/309
+256/309
+239/309
+260/309
+213/309
+265/309
+224/309
+245/309
+255/309
+230/309
+238/309
+shell en cubo 2
+195/309
+250/309
+shell en cubo 2
+204/309
+269/309
+259/309
+244/309
+shell en cubo 2
+212/309
+223/309
+264/309
+237/309
+229/309
+shell en cubo 2
+194/309
+254/309
+268/309
+shell en cubo 2
+203/309
+249/309
+243/309
+222/309
+shell en cubo 2
+211/309
+shell en cubo 2
+193/309
+236/309
+228/309
+275/309
+274/309
+242/309
+221/309
+shell en cubo 2
+202/309
+shell en cubo 2
+shell en cubo 2
+192/309
+278/309
+277/309
+248/309
+235/309
+shell en cubo 2
+220/309
+273/309
+287/309
+286/309
+shell en cubo 2
+290/309
+289/309
+296/309
+295/309
+281/309
+280/309
+276/309
+293/309
+292/309
+272/309
+288/309
+284/309
+283/309
+shell en cubo 2
+299/309
+298/309
+302/309
+301/309
+282/309
+279/309
+291/309
+285/309
+297/309
+305/309
+304/309
+308/309
+307/309
+294/309
+309/309
+300/309
+306/309
+303/309
+SAVING RESULTS TO FILE: Results_4c_total
