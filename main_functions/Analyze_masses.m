@@ -102,7 +102,7 @@ fileID = fopen(filename,'w');
 fprintf(fileID,'Name   \t Mass (hand)  \t Miss (hand) \t Mass (alg)  \t Miss (alg) \t dV\n',A);
 
 for n=1:N
-    fprintf(fileID,'%s   \t %12.1f \t %12.1f \t %12.1f \t %12.1f \t %12.1f \n', shell_all{n}.name, shell_candidates{n}.MassShell, shell_candidates{n}.MassMiss, local_auto{n}.Mass, local_auto{n}.Missing, shell_candidates{n}.dV*0.7); % using 70% of channels
+    fprintf(fileID,'%s   \t %12.1f \t %12.1f \t %12.1f \t %12.1f \t %12.1f \n', shell_all{n}.name, shell_candidates{n}.MassShell, shell_candidates{n}.MassMiss, local_auto{n}.Mass, local_auto{n}.Missing, shell_candidates{n}.dV); 
 end
 fclose(fileID);
 
