@@ -139,7 +139,7 @@ if Visualization
     set(gca,'XDir','reverse')
     box(gca,'on');
     hold(gca,'all');
-    plot(shell.long,shell.lat,'MarkerSize',12,'Marker','o','LineWidth',1,'LineStyle','none','Color',[1 0 0]);
+    %plot(shell.long,shell.lat,'MarkerSize',12,'Marker','o','LineWidth',1,'LineStyle','none','Color',[1 0 0]);
 else
     fig1 = [];
 end
@@ -155,7 +155,7 @@ end
 inda =1;
 scan_max0 = scan_max;
 for a = alpha
-    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],Visualization);
+    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],0);
     %scan_max = scan_max_new;
     %x = x_new;
     
@@ -185,18 +185,18 @@ for a = alpha
                 area(inda,indd) = pi*dev(1)*dev(2);
                 if Visualization
                     show_map(fig1,1,[longmin longmax],[latmin latmax], sub, cref)
-                    graficar_puntos(fig1,1,x_new,'o',[1 0 0])
+                    graficar_puntos(fig1,1,x_new,'.',[1 0 0])
                 end
                 %if ~isempty(inwall)
                 %    graficar_puntos(fig1,1,inwall,'x',[0 0 0])
                 %end
                 %graficar_puntos(fig1,1,outwall,'x',[0 0 1])
                 % depurar bordes externos
-                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],Visualization);
+                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],0);
                 % Completar bordes externos
                 [outwall, scan_out] = completar_bordes(scan_out,shell.long,shell.lat,L,N); 
                 if Visualization
-                    graficar_puntos(fig1,1,outwall,'x',[0 0 0])
+                    %graficar_puntos(fig1,1,outwall,'x',[0 0 0])
                     plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
                     title(['MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
                 end
