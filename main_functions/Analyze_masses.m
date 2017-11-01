@@ -27,7 +27,7 @@ shell_candidates = shell_all;
 alpha = alpha_range;
 delta = delta_range;
 
-Top_Diam_Diff = 0.25; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = 1; % Optimal rmse_miss=60,750,  rmse_mass=62,833
 perc = 0.7; % Velocity percentages
 
 Diff2 = zeros(size(Mass));
@@ -188,12 +188,12 @@ legend('show');
 
 
 %% Visualize structures
-%Visualization = 1;
-%figure
+Visualization = 1;
+figure
 %for n=15:N
-%for n=1:N
-%    [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
-%    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization, perc);
-%    clf('reset')
-%end
+for n=45
+    [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
+    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  local_auto{n}.alpha, local_auto{n}.delta, shell_candidates{n}, Visualization, perc);
+    clf('reset')
+end
 end

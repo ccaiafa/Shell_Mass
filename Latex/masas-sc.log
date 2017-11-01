@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.6)  28 OCT 2017 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.6)  28 OCT 2017 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,7 +840,7 @@ Package epstopdf Info: Source file: <sc.eps>
 (epstopdf)                    date: 2017-10-28 17:32:36
 (epstopdf)                    size: 15268 bytes
 (epstopdf)             Output file: <sc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-10-28 13:34:51
+(epstopdf)                    date: 2017-10-28 13:35:05
 (epstopdf)                    size: 11941 bytes
 (epstopdf)             Command: <repstopdf --outfile=sc-eps-converted-to.pdf sc
 .eps>
@@ -849,7 +849,7 @@ runsystem(repstopdf --outfile=sc-eps-converted-to.pdf sc.eps)...executed safely
  (allowed).
 
 Package epstopdf Info: Result file: <sc-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-10-28 13:35:05
+(epstopdf)                    date: 2017-10-28 13:39:33
 (epstopdf)                    size: 11941 bytes.
 <sc-eps-converted-to.pdf, id=1, 546.04pt x 164.615pt>
 File: sc-eps-converted-to.pdf Graphic file (type pdf)
