@@ -1,0 +1,17 @@
+\begin{thebibliography}{3}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Kalberla} {et~al.}(2005){Kalberla}, {Burton}, {Hartmann}, {Arnal},
+  {Bajaja}, {Morras}, \& {P{\"o}ppel}}]{kal05}
+{Kalberla}, P.~M.~W., {Burton}, W.~B., {Hartmann}, D., {et~al.} 2005, \aap,
+  440, 775
+
+\bibitem[{{Suad} {et~al.}(2014){Suad}, {Caiafa}, {Arnal}, \&
+  {Cichowolski}}]{sua14}
+{Suad}, L.~A., {Caiafa}, C.~F., {Arnal}, E.~M., \& {Cichowolski}, S. 2014,
+  \aap, 564, A116
+
+\bibitem[{{Tenorio-Tagle}(1981)}]{ten81}
+{Tenorio-Tagle}, G. 1981, \aap, 94, 338
+
+\end{thebibliography}
