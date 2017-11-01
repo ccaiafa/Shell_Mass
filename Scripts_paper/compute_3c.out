@@ -252,3 +252,257 @@ shell en cubo 2
 181/185
 180/185
 SAVING RESULTS TO FILE: Results_3c_total
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Computing masses
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 12 workers.
+95/185
+76/185
+86/185
+103/185
+110/185
+55/185
+66/185
+22/185
+33/185
+44/185
+117/185
+11/185
+shell en cubo 2
+102/185
+54/185
+shell en cubo 2
+32/185
+shell en cubo 2
+94/185
+43/185
+65/185
+75/185
+10/185
+85/185
+shell en cubo 2
+109/185
+shell en cubo 2
+116/185
+21/185
+shell en cubo 2
+101/185
+42/185
+74/185
+53/185
+shell en cubo 2
+93/185
+64/185
+31/185
+84/185
+shell en cubo 2
+115/185
+20/185
+9/185
+shell en cubo 2
+108/185
+73/185
+shell en cubo 2
+100/185
+83/185
+shell en cubo 2
+114/185
+30/185
+63/185
+shell en cubo 2
+19/185
+52/185
+shell en cubo 2
+92/185
+41/185
+shell en cubo 2
+99/185
+72/185
+8/185
+shell en cubo 2
+113/185
+shell en cubo 2
+18/185
+82/185
+62/185
+shell en cubo 2
+107/185
+51/185
+29/185
+40/185
+shell en cubo 2
+91/185
+shell en cubo 2
+98/185
+61/185
+81/185
+shell en cubo 2
+17/185
+shell en cubo 2
+112/185
+shell en cubo 2
+106/185
+7/185
+71/185
+shell en cubo 2
+90/185
+39/185
+50/185
+28/185
+60/185
+shell en cubo 2
+97/185
+shell en cubo 2
+16/185
+shell en cubo 2
+111/185
+70/185
+80/185
+shell en cubo 2
+89/185
+shell en cubo 2
+105/185
+59/185
+49/185
+38/185
+27/185
+shell en cubo 2
+88/185
+shell en cubo 2
+shell en cubo 2
+96/185
+6/185
+79/185
+shell en cubo 2
+15/185
+69/185
+shell en cubo 2
+104/185
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  8.981103e-17.
+> In ellipse_fit_opt_V2 (line 7)
+58/185
+26/185
+48/185
+123/185
+shell en cubo 2
+122/185
+shell en cubo 2
+87/185
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 195)
+  In parallel_function>make_general_channel/channel_general (line 914)
+  In remoteParallelFunction (line 38)
+78/185
+shell en cubo 2
+68/185
+37/185
+shell en cubo 2
+121/185
+shell en cubo 2
+57/185
+5/185
+14/185
+25/185
+77/185
+134/185
+133/185
+47/185
+139/185
+138/185
+shell en cubo 2
+120/185
+67/185
+129/185
+128/185
+56/185
+36/185
+13/185
+24/185
+4/185
+132/185
+46/185
+shell en cubo 2
+119/185
+shell en cubo 2
+127/185
+shell en cubo 2
+35/185
+12/185
+45/185
+3/185
+34/185
+23/185
+131/185
+137/185
+shell en cubo 2
+118/185
+shell en cubo 2
+126/185
+147/185
+146/185
+143/185
+142/185
+151/185
+150/185
+shell en cubo 2
+130/185
+145/185
+136/185
+149/185
+141/185
+2/185
+144/185
+shell en cubo 2
+125/185
+157/185
+156/185
+163/185
+162/185
+154/185
+153/185
+160/185
+159/185
+148/185
+165/185
+164/185
+135/185
+1/185
+155/185
+140/185
+shell en cubo 2
+124/185
+161/185
+167/185
+166/185
+158/185
+152/185
+169/185
+168/185
+171/185
+170/185
+shell en cubo 2
+173/185
+172/185
+175/185
+174/185
+177/185
+176/185
+181/185
+180/185
+179/185
+178/185
+185/185
+184/185
+183/185
+182/185
+SAVING RESULTS TO FILE: Results_3c_total
