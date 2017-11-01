@@ -217,16 +217,19 @@ for a = alpha
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 % Restar Local Background
 
-                sub_back = background(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
+                %sub_back = background(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
+                sub_back_flat = background_with_missing(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
 
                 if Visualization
-                    show_map(fig1,3,[longmin longmax],[latmin latmax], sub_back, cref)
+                    %show_map(fig1,3,[longmin longmax],[latmin latmax], sub_back, cref)
+                    show_map(fig1,3,[longmin longmax],[latmin latmax], sub_back_flat, cref)
                     hold on
                     plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
-                    title(['RESIDUAL (MAP - SHELL)'])
+                    title(['BACKGROUND FLAT'])
                 end
                 
-                sub_corrected = sub - sub_back;
+                %sub_corrected = sub - sub_back;
+                sub_corrected = sub - sub_back_flat;
                 sub_corrected(sub_corrected < 0) = 0;
 
                 if Visualization
@@ -269,18 +272,19 @@ for a = alpha
                 sub_corrected(sub_corrected==0)=NaN;
                 
                 
-                Temperatures.backg(inda,indd) = mean(sub_back(:)); 
+                Temperatures.backg(inda,indd) = mean(sub_back_flat(:)); 
                 Temperatures.shell(inda,indd) = nanmean(sub_corrected(:));
                 %%
-                sub_back_with_missing = background_with_missing(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
+                %sub_back_with_missing = background_with_missing(sub,scan_out,i0,j0,A,shell,L,P,N,Minimo);
                 
-                sub_missing = sub_back_with_missing - sub;
+                %sub_missing = sub_back_with_missing - sub;
+                sub_missing = sub_back_flat - sub;
                 
-                sub_picos = -sub_missing(sub_missing<0); 
+                %sub_picos = -sub_missing(sub_missing<0); 
                 sub_missing(sub_missing < 0) = 0;
                 
                 if Visualization
-                    show_map(fig1,4,[longmin longmax],[latmin latmax], sub_back_with_missing, cref)
+                    show_map(fig1,4,[longmin longmax],[latmin latmax], sub_back_flat, cref)
                     hold on
                     title(['RESIDUAL FILLED WITH MISSING MASS'])
                 end
