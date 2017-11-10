@@ -284,9 +284,9 @@ for a = alpha
                 sub_missing(sub_missing < 0) = 0;
                 
                 if Visualization
-                    show_map(fig1,4,[longmin longmax],[latmin latmax], sub_back_flat, cref)
+                    show_map(fig1,4,[longmin longmax],[latmin latmax], sub_missing, cref)
                     hold on
-                    title(['RESIDUAL FILLED WITH MISSING MASS'])
+                    title(['MISSING'])
                 end
                
                 
