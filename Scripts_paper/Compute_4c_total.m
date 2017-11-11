@@ -14,7 +14,7 @@ dataRootPath = strcat(root,'/data');
 
 OutputFile = 'Results_4c_total';
 
-alpha_range = 0.1:0.01:0.5;
+alpha_range = 0:0.01:0.5;
 %alpha_range = [0.15,0.18];
 delta_range = 0.:0.001:0.5;
 %delta_range = [0.15, 0.25];

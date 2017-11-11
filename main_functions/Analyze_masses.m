@@ -27,7 +27,7 @@ shell_candidates = shell_all;
 alpha = alpha_range;
 delta = delta_range;
 
-Top_Diam_Diff = 1.0; % Optimal rmse_miss=60,750,  rmse_mass=62,833
+Top_Diam_Diff = .1; % Optimal rmse_miss=60,750,  rmse_mass=62,833
 perc = 0.7; % Velocity percentages
 
 Diff2 = zeros(size(Mass));
