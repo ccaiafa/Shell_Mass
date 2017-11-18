@@ -177,7 +177,7 @@ for a = alpha
             inwall = zeros(P,2); % inner walls
             outwall = zeros(P,2); % outer walls
             [scan_in,scan_out,inwall,outwall] = buscar_paredes1(scan_max_new,inwall,outwall,d,shell,L);
-            if size(outwall,1) < 2
+            if size(outwall,1) < 1
                 mass(inda,indd) = NaN;
                 missing_mass(inda,indd) = NaN;
                 area(inda,indd) = NaN;
@@ -191,10 +191,10 @@ for a = alpha
                 %    graficar_puntos(fig1,1,inwall,'x',[0 0 0])
                 %end
                 %graficar_puntos(fig1,1,outwall,'x',[0 0 1])
-                % depurar bordes externos
-                %[scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],0);
+                % depurar bordes externos using 0.25*std (alpha=0.25)
+                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,0.25,[0,0,0],0);
                 % Completar bordes externos
-                [outwall, scan_out] = completar_bordes(scan_out,shell.long,shell.lat,L,N); 
+                [outwall, scan_out] = completar_bordes_new(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
                 if Visualization
                     %graficar_puntos(fig1,1,outwall,'x',[0 0 0])
                     plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
@@ -310,7 +310,7 @@ for a = alpha
                 end
                 
                 if Visualization
-                    title(['Missing Mass= ',num2str(Masa_missing,'%10.5e\n'),' ((Mass-Missing)/Mass=',num2str(100*(Masa-Masa_missing)/Masa),'%)'])
+                    title(['Missing Mass= ',num2str(Masa_missing,'%10.5e\n'),' (Ref=',num2str(shell.MassMiss,'%10.5e\n'),')'])
                     pause(0.01)
                 end
 
