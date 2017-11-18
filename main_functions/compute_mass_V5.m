@@ -155,7 +155,7 @@ end
 inda =1;
 scan_max0 = scan_max;
 for a = alpha
-    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],0);
+    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],Visualization);
     %scan_max = scan_max_new;
     %x = x_new;
     
@@ -192,7 +192,7 @@ for a = alpha
                 %end
                 %graficar_puntos(fig1,1,outwall,'x',[0 0 1])
                 % depurar bordes externos
-                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],0);
+                %[scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[0,0,0],0);
                 % Completar bordes externos
                 [outwall, scan_out] = completar_bordes(scan_out,shell.long,shell.lat,L,N); 
                 if Visualization
