@@ -17,9 +17,9 @@ dataRootPath = strcat(root,'/data');
 
 OutputFile = 'Results_3c_total';
 
-alpha_range = 0.2:0.01:0.5;
+alpha_range = 0.2:0.01:1.0;
 %alpha_range = [0.15,0.18];
-delta_range = 0.:0.01:0.5;
+delta_range = 0:0.01:0.75;
 %delta_range = [0.15, 0.25];
 
 Visualization = 0; % Visualization ONLY works in Cubo 1 (long range 80 - 130)
