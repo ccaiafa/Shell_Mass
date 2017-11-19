@@ -99,15 +99,29 @@ plot(rango_masas, rango_masas,'k','DisplayName','Perfect estimation')
 set(gca,'DataAspectRatio',[1499500 1499500 1],'XMinorTick','on','XScale','log','YMinorTick','on','YScale','log')
 legend(gca,'show');
 
+%% Print Masses
+filename = fullfile(dataOutPath,strcat('Masses_',data_type,'.txt'));
+fileID = fopen(filename,'w');
+fprintf(fileID,'Name   \t Mass (hand)  \t Miss (hand) \t Mass (alg)  \t Miss (alg) \t dV\n');
+
+for n=1:N
+    fprintf(fileID,'%s   \t %12.1f \t %12.1f \t %12.1f \t %12.1f \t %12.1f \n', shell_all{n}.name, shell_candidates{n}.MassShell, shell_candidates{n}.MassMiss, Mass_estimated(n), Missing_estimated(n), shell_candidates{n}.dV); 
+end
+fclose(fileID);
+
 %% Visualize structures
 Visualization = 1;
 perc = 0.7; % Velocity percentages
+dir_name = fullfile(dataOutPath,strcat('Figs_',data_type));
+mkdir(dir_name);
 figure
 for n=1:N
 %for n=[31,53,37,59,11,20,56,46,2,49,62,25,9,29,44,47]
-    n
+    disp(['Displaying shell ',num2str(n)])
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
     [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  optimal_alpha(n), optimal_delta(n), shell_candidates{n}, Visualization, perc);
+    file_fig_name = fullfile(dataOutPath,strcat('Figs_',data_type),strcat('Fig_shell_',num2str(n),'.pdf'));
+    print(file_fig_name,'-dpdf')
     clf('reset')
 end
 

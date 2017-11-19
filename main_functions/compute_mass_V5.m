@@ -204,6 +204,7 @@ for a = alpha
                     % mostrar elipse de catalogo
                     [~,~] = ellipse(shell.a,shell.b,shell.tita*180/pi,shell.X0,shell.Y0,[0,0,0],P,Visualization);
                     title(['SHELL ', shell.name,'MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
+                    set(gca,'fontsize', 9)
                 end
                 
                 %
@@ -232,6 +233,7 @@ for a = alpha
                     hold on
                     plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
                     title(['BACKGROUND FLAT'])
+                    set(gca,'fontsize', 9)
                 end
                 
                 %sub_corrected = sub - sub_back;
@@ -271,6 +273,7 @@ for a = alpha
                         ' Ref=',num2str(shell.MassShell,'%10.1e\n'),...
                         ' Error=',num2str(100*(shell.MassShell-Masa)/(shell.MassShell+Masa)),'%'])
                     pause(0.01)
+                    set(gca,'fontsize', 9)
                 end
 
                 mass(inda,indd) = Masa;
@@ -295,6 +298,7 @@ for a = alpha
                     show_map(fig1,4,[longmin longmax],[latmin latmax], sub_missing, cref)
                     hold on
                     title(['MISSING'])
+                    set(gca,'fontsize', 9)
                 end
                
                 
@@ -321,7 +325,9 @@ for a = alpha
                     title(['Missing Mass= ',num2str(Masa_missing,'%10.1e\n'),...
                         ', Ref=',num2str(shell.MassMiss,'%10.1e\n'),...
                         ', Error=',num2str(100*(shell.MassMiss-Masa_missing)/(shell.MassMiss+Masa_missing)),'%'])
+                    set(gca,'fontsize', 9)
                     pause(0.01)
+         
                 end
 
                 missing_mass(inda,indd) = Masa_missing;
