@@ -115,8 +115,8 @@ perc = 0.7; % Velocity percentages
 dir_name = fullfile(dataOutPath,strcat('Figs_',data_type));
 mkdir(dir_name);
 figure
-for n=1:N
-%for n = 12 % 3cdataset
+%for n=1:N
+for n = 139:N % 3cdataset
 %for n=[31,53,37,59,11,20,56,46,2,49,62,25,9,29,44,47] %4c dataset
     disp(['Displaying shell ',num2str(n)])
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});

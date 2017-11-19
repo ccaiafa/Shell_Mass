@@ -155,8 +155,12 @@ end
 inda =1;
 scan_max0 = scan_max;
 for a = alpha
-    [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],Visualization);
-    % plot elipse from catalogue
+    par_a = a;
+    x_new = [];
+    while size(x_new,1) < 2
+        [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,par_a,[1,0,0],Visualization);
+        par_a = par_a*1.25;
+    end
     
     
     %scan_max = scan_max_new;
