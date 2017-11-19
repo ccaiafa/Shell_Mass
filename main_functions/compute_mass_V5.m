@@ -156,6 +156,9 @@ inda =1;
 scan_max0 = scan_max;
 for a = alpha
     [scan_max_new,x_new,dev] = depurar_puntos_V5(scan_max,x,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,a,[1,0,0],Visualization);
+    % plot elipse from catalogue
+    
+    
     %scan_max = scan_max_new;
     %x = x_new;
     
@@ -197,12 +200,15 @@ for a = alpha
                 [outwall, scan_out] = completar_bordes_new(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
                 if Visualization
                     %graficar_puntos(fig1,1,outwall,'x',[0 0 0])
-                    plot(outwall(:,1),outwall(:,2),'Color',[1 1 1])
-                    title(['MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
+                    plot(outwall(:,1),outwall(:,2),'Color',[1 1 1]) 
+                    % mostrar elipse de catalogo
+                    [~,~] = ellipse(shell.a,shell.b,shell.tita*180/pi,shell.X0,shell.Y0,[0,0,0],P,Visualization);
+                    title(['SHELL ', shell.name,'MAP (alpha= ',num2str(a),'  delta=',num2str(d),')'])
                 end
                 
-                %% mostrar elipse de catalogo
+                %
                 %hold on
+               
                 %[xn,yn] = ellipse(shell.a,shell.b,shell.tita*180/pi,shell.X0,shell.Y0,[1 1 1],100);
 
                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -261,7 +267,9 @@ for a = alpha
                 end
                 
                 if Visualization
-                    title(['SHELL ', shell.name,' (Mass =',num2str(Masa,'%10.5e\n'),')',' Ref=',num2str(shell.MassShell,'%10.5e\n')])
+                    title([' Mass =',num2str(Masa,'%10.1e\n'),', ', ...
+                        ' Ref=',num2str(shell.MassShell,'%10.1e\n'),...
+                        ' Error=',num2str(100*(shell.MassShell-Masa)/(shell.MassShell+Masa)),'%'])
                     pause(0.01)
                 end
 
@@ -310,7 +318,9 @@ for a = alpha
                 end
                 
                 if Visualization
-                    title(['Missing Mass= ',num2str(Masa_missing,'%10.5e\n'),' (Ref=',num2str(shell.MassMiss,'%10.5e\n'),')'])
+                    title(['Missing Mass= ',num2str(Masa_missing,'%10.1e\n'),...
+                        ', Ref=',num2str(shell.MassMiss,'%10.1e\n'),...
+                        ', Error=',num2str(100*(shell.MassMiss-Masa_missing)/(shell.MassMiss+Masa_missing)),'%'])
                     pause(0.01)
                 end
 
