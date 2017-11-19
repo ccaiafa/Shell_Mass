@@ -195,8 +195,15 @@ for a = alpha
                 %end
                 %graficar_puntos(fig1,1,outwall,'x',[0 0 1])
                 % depurar bordes externos using 0.25*std (alpha=0.25)
-                [scan_out,outwall] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,0.25,[0,0,0],0);
-                % Completar bordes externos
+                outwall_new = [];
+                scan_out_new = [];
+                d_par = 0.25;
+                while size(outwall_new,2) < 2
+                    [scan_out_new,outwall_new] = depurar_puntos_V5(scan_out,outwall,fig1,1,longmin,longmax,latmin,latmax,sub,shell,P,d_par,[0,0,0],0);
+                    d_par = d_par*1.25;
+                end
+                scan_out = scan_out_new;
+                    % Completar bordes externos
                 [outwall, scan_out] = completar_bordes_new(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
                 if Visualization
                     %graficar_puntos(fig1,1,outwall,'x',[0 0 0])
