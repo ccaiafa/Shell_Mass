@@ -207,7 +207,11 @@ for a = alpha
                     d_par = d_par*1.25;
                 end
                 scan_out = scan_out_new;
-                    % Completar bordes externos
+                
+                % Constrain shell width to 0.5 degrees from maxima (Marcelo recommendation)
+                [outwall, scan_out] = reduce_width(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
+                
+                % Completar bordes externos
                 [outwall, scan_out] = completar_bordes_new(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
                 if Visualization
                     %graficar_puntos(fig1,1,outwall,'x',[0 0 0])

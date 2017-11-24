@@ -16,7 +16,7 @@ OutputFile = 'Results_4c_total';
 
 
 alpha_range = 0.2:0.01:1.0;
-%alpha_range = [0.15,0.18];
+%alpha_range = 0.54;
 delta_range = 0:0.01:0.75;
 %delta_range = [0.15, 0.25];
 
