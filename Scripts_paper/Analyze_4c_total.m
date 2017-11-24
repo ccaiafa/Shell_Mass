@@ -16,7 +16,7 @@ dataRootPath = strcat(root,'/data');
 
 dataOutPath = InputPath;
 
-Analyze_masses(InputPath, data_type, dataRootPath, dataOutPath)
+Analyze_masses_new(InputPath, data_type, dataRootPath, dataOutPath)
 
 rmpath(genpath(code_path))
 
