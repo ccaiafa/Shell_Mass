@@ -1,5 +1,5 @@
-function [x, scan] = reduce_width(scan,scan_max,long0,lat0,L,N)
-max_width = 0.5;
+function [x, scan] = reduce_width(scan,scan_max,long0,lat0,L,N,dR,Reff)
+max_width = dR*Reff;
 
 scan = fill_in_external(scan, scan_max, long0, lat0, L, N);
 

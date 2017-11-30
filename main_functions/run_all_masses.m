@@ -1,5 +1,5 @@
 
-function [] = run_all_masses(dataRootPath, fun, dataOutPath, OutputFile, alpha_range, delta_range, Visualization, perc)
+function [] = run_all_masses(dataRootPath, fun, dataOutPath, OutputFile, alpha_range, delta_range, Visualization, perc, dR)
 
 % Load full dataset
 %shell_all = load_shells_4c_Dvel_100();
@@ -28,12 +28,12 @@ parfor s=1:N
     
     % Comute mass associated to HI-shell n
     %disp(['Computing HI-Shell Mass: ', shell.name, ' ',num2str(s),'/',num2str(N_subtrain),'  ...']);
-    [Mass(:,:,s), Missing_Mass(:,:,s), Area(:,:,s), Temperatures{s}] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization, perc);
+    [Mass(:,:,s), Missing_Mass(:,:,s), Area(:,:,s), Temperatures{s}] = compute_mass_V5(cube,n_hdu,alpha_range,delta_range,shell,Visualization, perc, dR);
 end
 
 
 disp(['SAVING RESULTS TO FILE: ',OutputFile])
-save(fullfile(dataOutPath,OutputFile), '-v7.3')
+save(fullfile(dataOutPath,strcat(OutputFile,'_dR_',num2str(dR))), '-v7.3')
 
 
 %save('variables10.mat')

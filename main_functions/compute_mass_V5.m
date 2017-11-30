@@ -1,4 +1,4 @@
-function [ mass, missing_mass, area , Temperatures] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization, perc)
+function [ mass, missing_mass, area , Temperatures] = compute_mass_V5( cube, header,  alpha, delta, shell, Visualization, perc, dR)
 
 %threshold = 3;
 threshold = 5;
@@ -209,7 +209,8 @@ for a = alpha
                 scan_out = scan_out_new;
                 
                 % Constrain shell width to 0.5 degrees from maxima (Marcelo recommendation)
-                [outwall, scan_out] = reduce_width(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
+                Reff = sqrt(shell.a*shell.b);
+                [outwall, scan_out] = reduce_width(scan_out,scan_max_new,shell.long,shell.lat,L,N,dR,Reff); 
                 
                 % Completar bordes externos
                 [outwall, scan_out] = completar_bordes_new(scan_out,scan_max_new,shell.long,shell.lat,L,N); 
