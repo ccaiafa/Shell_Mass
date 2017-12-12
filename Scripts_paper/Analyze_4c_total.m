@@ -4,8 +4,8 @@ cd('/Users/CesarMB13/Google Drive/My Journal papers/In preparation/Shell_mass/co
 close all
 
 %data_type = '4c_total';
-data_type = '4c_total_dR_0.165';
-dR = 0.165;
+data_type = '4c_total_dR_0.9';
+dR = 0.9;
 
 cd ..
 code_path = pwd;
