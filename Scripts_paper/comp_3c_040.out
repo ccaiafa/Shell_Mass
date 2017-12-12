@@ -1,0 +1,288 @@
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Computing masses
+Starting parallel pool (parpool) using the 'local' profile ...
+185/185
+184/185
+183/185
+182/185
+181/185
+180/185
+179/185
+178/185
+177/185
+176/185
+175/185
+174/185
+173/185
+172/185
+171/185
+170/185
+169/185
+168/185
+167/185
+166/185
+165/185
+164/185
+163/185
+162/185
+161/185
+160/185
+159/185
+158/185
+157/185
+156/185
+155/185
+154/185
+153/185
+152/185
+151/185
+150/185
+149/185
+148/185
+147/185
+146/185
+145/185
+144/185
+143/185
+142/185
+141/185
+140/185
+139/185
+138/185
+137/185
+136/185
+135/185
+134/185
+133/185
+132/185
+131/185
+130/185
+129/185
+128/185
+shell en cubo 2
+127/185
+shell en cubo 2
+126/185
+shell en cubo 2
+125/185
+shell en cubo 2
+124/185
+shell en cubo 2
+123/185
+shell en cubo 2
+122/185
+shell en cubo 2
+121/185
+shell en cubo 2
+120/185
+shell en cubo 2
+119/185
+shell en cubo 2
+118/185
+shell en cubo 2
+117/185
+shell en cubo 2
+116/185
+shell en cubo 2
+115/185
+shell en cubo 2
+114/185
+shell en cubo 2
+113/185
+shell en cubo 2
+112/185
+shell en cubo 2
+111/185
+shell en cubo 2
+110/185
+shell en cubo 2
+109/185
+shell en cubo 2
+108/185
+shell en cubo 2
+107/185
+shell en cubo 2
+106/185
+shell en cubo 2
+105/185
+shell en cubo 2
+104/185
+shell en cubo 2
+103/185
+shell en cubo 2
+102/185
+shell en cubo 2
+101/185
+shell en cubo 2
+100/185
+shell en cubo 2
+99/185
+shell en cubo 2
+98/185
+shell en cubo 2
+97/185
+shell en cubo 2
+96/185
+shell en cubo 2
+95/185
+shell en cubo 2
+94/185
+shell en cubo 2
+93/185
+shell en cubo 2
+92/185
+shell en cubo 2
+91/185
+shell en cubo 2
+90/185
+shell en cubo 2
+89/185
+shell en cubo 2
+88/185
+shell en cubo 2
+87/185
+86/185
+85/185
+84/185
+83/185
+82/185
+81/185
+80/185
+79/185
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  2.028201e-16.] 
+[> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 206)
+  In parallel_function (line 478)
+  In run_all_masses (line 22)
+  In Compute_3c_total_040 (line 30)] 
+78/185
+77/185
+76/185
+75/185
+74/185
+73/185
+72/185
+71/185
+70/185
+69/185
+68/185
+67/185
+66/185
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904554e-16.] 
+[> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 206)
+  In parallel_function (line 478)
+  In run_all_masses (line 22)
+  In Compute_3c_total_040 (line 30)] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904554e-16.] 
+[> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 206)
+  In parallel_function (line 478)
+  In run_all_masses (line 22)
+  In Compute_3c_total_040 (line 30)] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904554e-16.] 
+[> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 206)
+  In parallel_function (line 478)
+  In run_all_masses (line 22)
+  In Compute_3c_total_040 (line 30)] 
+[Warning: Matrix is close to singular or badly scaled. Results may be
+inaccurate. RCOND =  1.904554e-16.] 
+[> In ellipse_fit_opt_V2 (line 7)
+  In depurar_puntos_V5 (line 6)
+  In compute_mass_V5 (line 206)
+  In parallel_function (line 478)
+  In run_all_masses (line 22)
+  In Compute_3c_total_040 (line 30)] 
+65/185
+64/185
+63/185
+62/185
+61/185
+60/185
+59/185
+58/185
+57/185
+56/185
+55/185
+54/185
+53/185
+52/185
+51/185
+50/185
+49/185
+48/185
+47/185
+46/185
+45/185
+44/185
+43/185
+42/185
+41/185
+40/185
+39/185
+38/185
+37/185
+36/185
+shell en cubo 2
+35/185
+34/185
+33/185
+shell en cubo 2
+32/185
+31/185
+30/185
+29/185
+28/185
+27/185
+26/185
+25/185
+24/185
+23/185
+22/185
+21/185
+20/185
+shell en cubo 2
+19/185
+shell en cubo 2
+18/185
+shell en cubo 2
+17/185
+shell en cubo 2
+16/185
+shell en cubo 2
+15/185
+14/185
+13/185
+12/185
+11/185
+10/185
+9/185
+8/185
+7/185
+6/185
+5/185
+4/185
+3/185
+2/185
+1/185
+SAVING RESULTS TO FILE: Results_3c_total
+>> 

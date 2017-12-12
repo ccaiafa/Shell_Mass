@@ -1,0 +1,15 @@
+#!/bin/bash 
+
+#PBS -l nodes=1:ppn=16 
+#PBS -l walltime=120:00:00 
+#PBS -m ae 
+#PBS -M ccaiafa@iu.edu 
+#PBS -N comp_3c_080
+#PBS -V 
+#PBS -o /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/comp_3c_080.out 
+#PBS -e /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/comp_3c_080.err 
+
+module load matlab 
+cd /N/dc2/projects/lifebid/code/ccaiafa/Shells/code/Shell_Mass/Scripts_paper/
+
+matlab -nodesktop -nosplash -r 'Compute_3c_total_080'  
