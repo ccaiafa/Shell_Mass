@@ -1,4 +1,4 @@
-function [] = Analyze_masses_new(InputPath, data_type,dataRootPath1,dataOutPath1)
+function [] = Analyze_masses_new(InputPath, data_type,dataRootPath1,dataOutPath1,dR)
 
 
 %load 'variables.mat'
@@ -120,7 +120,7 @@ for n = 1:N % 3cdataset
 %for n=[31,53,37,59,11,20,56,46,2,49,62,25,9,29,44,47] %4c dataset
     disp(['Displaying shell ',num2str(n)])
     [~, cube, header] = select_cube(dataRootPath,shell_candidates{n});
-    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  optimal_alpha(n), optimal_delta(n), shell_candidates{n}, Visualization, perc);
+    [ mass, missing_mass, diameter ] = compute_mass_V5( cube, header,  optimal_alpha(n), optimal_delta(n), shell_candidates{n}, Visualization, perc, dR);
     file_fig_name = fullfile(dataOutPath,strcat('Figs_',data_type),strcat('Fig_shell_',num2str(n),'.pdf'));
     print(file_fig_name,'-dpdf')
     clf('reset')
