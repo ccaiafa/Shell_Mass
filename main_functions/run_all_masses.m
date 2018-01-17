@@ -33,7 +33,7 @@ end
 
 
 disp(['SAVING RESULTS TO FILE: ',OutputFile])
-save(fullfile(dataOutPath,strcat(OutputFile,'_dR_',num2str(dR))), '-v7.3')
+save(fullfile(dataOutPath,strcat(OutputFile,'_dR_',num2str(dR),'_perc_',num2str(perc))), '-v7.3')
 
 
 %save('variables10.mat')
