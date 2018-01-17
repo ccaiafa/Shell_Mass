@@ -1,0 +1,555 @@
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS103+07-018*   	        103.3 	         10.8 	        102.9 	          6.9 	          3.9 
+-7.900000e+00   	     -17500.0 	      20600.0 	          2.0 	      82800.0 	      85400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS116-06-042*   	        116.9 	         -6.5 	        116.5 	          2.2 	          2.1 
+-3.730000e+01   	     -42300.0 	      16500.0 	          3.8 	      18900.0 	      24900.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS093-14-021*   	         92.2 	        -13.7 	         93.0 	          5.5 	          5.0 
+-1.890000e+01   	     -20600.0 	      22700.0 	          3.5 	      45000.0 	      88800.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS120+16-067*   	        119.6 	         16.3 	        120.0 	          3.6 	          2.2 
+-1.330000e+01   	     -67000.0 	      22700.0 	          6.8 	      37900.0 	      65400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS109+06-032   	        108.5 	          6.5 	        109.3 	          3.0 	          2.1 
+1.710000e+01   	     -32000.0 	      20600.0 	          3.1 	      16500.0 	      25000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS098-25-018*   	         98.6 	        -24.8 	         97.9 	          3.8 	          3.0 
+6.860000e+01   	     -17500.0 	      21600.0 	          2.6 	      10800.0 	      10800.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS100+09-040*   	         99.9 	          9.5 	        100.0 	          4.3 	          2.9 
+1.750000e+01   	     -40200.0 	      14400.0 	          4.7 	      29900.0 	      53400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS093+11-034*   	         92.7 	         11.3 	         92.6 	          2.2 	          1.3 
+2.680000e+01   	     -34000.0 	      19600.0 	          4.9 	      12800.0 	      25400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS098+24-032   	         97.9 	         23.6 	         97.5 	          2.2 	          1.8 
+2.780000e+01   	     -32000.0 	      27800.0 	          4.3 	       8060.0 	       9550.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS101-13-056*   	        101.9 	        -14.7 	        101.3 	          5.8 	          3.3 
+2.550000e+01   	     -55700.0 	      36100.0 	          6.2 	     169000.0 	     240000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS105-03-061   	        105.1 	         -5.2 	        104.9 	          3.3 	          2.7 
+8.710000e+01   	     -60800.0 	      16500.0 	          6.3 	     124000.0 	     224000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS110-04-067   	        109.7 	         -5.3 	        109.6 	          2.3 	          1.9 
+-8.900000e+00   	     -67000.0 	      32000.0 	          6.7 	      71500.0 	      78000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS108+00-075*   	        107.7 	          0.1 	        107.5 	          1.6 	          1.4 
+1.840000e+01   	     -75200.0 	      18600.0 	          7.8 	      28600.0 	      46700.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS117+08-076*   	        118.7 	          8.8 	        117.0 	          3.1 	          2.1 
+-6.000000e-01   	     -76300.0 	      19600.0 	          7.8 	      39200.0 	      54900.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS202+05+031   	        201.4 	          5.7 	        201.6 	          2.1 	          1.7 
+1.980000e+01   	      30900.0 	      20600.0 	          5.4 	       9220.0 	      17400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS139+06-054*   	        140.1 	          5.9 	        139.4 	          2.3 	          2.0 
+-3.020000e+01   	     -53600.0 	       9200.0 	          5.9 	       8720.0 	      32000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS142-01-057   	        142.2 	         -1.7 	        141.8 	          2.0 	          1.9 
+1.225000e+02   	     -56700.0 	      12400.0 	          6.8 	      12600.0 	      20300.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS153-10-026*   	        152.9 	        -11.2 	        152.8 	          2.7 	          2.1 
+1.260000e+01   	     -25800.0 	      10300.0 	          3.1 	      15500.0 	      15500.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS130+00-068*   	        129.5 	         -0.7 	        129.7 	          1.5 	          0.9 
+-2.820000e+01   	     -68000.0 	       6200.0 	          7.0 	       8250.0 	      15200.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS161+03-036   	        161.0 	          3.7 	        160.7 	          2.6 	          2.1 
+%   	     -36100.0 	       8200.0 	          8.6 	     194000.0 	     345000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS218-05+037*   	        218.2 	         -4.2 	        217.7 	          3.1 	          2.2 
+-2.950000e+01   	      37100.0 	       5200.0 	          3.6 	       8030.0 	       8040.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS224-18+036   	        223.5 	        -18.6 	        224.4 	          3.2 	          2.9 
+?   	      36100.0 	      16500.0 	          3.4 	       2190.0 	       2950.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS240-13+064*   	        239.0 	        -13.4 	        240.0 	          3.1 	          1.7 
+1.340000e+01   	      63900.0 	      13400.0 	          6.3 	      14500.0 	      16000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS257+09+037   	        256.7 	          9.8 	        256.8 	          3.7 	          2.8 
+-1.290000e+01   	      37100.0 	      23700.0 	          4.0 	      28600.0 	      49900.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS257-25+030*   	        257.2 	        -25.0 	        256.9 	          3.0 	          1.6 
+3.990000e+01   	      29900.0 	      13400.0 	          3.6 	       3040.0 	       5790.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS262-09+048*   	        260.8 	        -12.2 	        261.8 	          4.4 	          3.7 
+-3.040000e+01   	      48400.0 	      17500.0 	          5.6 	      39500.0 	      55200.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS264-04+044   	        264.2 	         -4.6 	        264.2 	          1.8 	          1.4 
+-1.270000e+01   	      44300.0 	       7200.0 	          5.5 	      22300.0 	      39000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS252-04+074*   	        252.0 	         -2.9 	        251.6 	          3.5 	          3.0 
+-2.770000e+01   	      74200.0 	       9300.0 	          7.6 	      78200.0 	     114000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS263-08+068*   	        263.1 	         -8.7 	        262.5 	          5.2 	          2.6 
+-1.750000e+01   	      68000.0 	      17500.0 	          7.9 	     119000.0 	     137000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS089-21-025*   	         91.1 	        -21.4 	         88.9 	          6.9 	          4.0 
+-1.500000e+00   	     -24700.0 	      11300.0 	          4.3 	      40500.0 	      32600.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS109+16-033*   	        109.2 	         16.9 	        109.4 	          3.9 	          2.4 
+1.325000e+02   	     -33000.0 	      42500.0 	          3.3 	      72400.0 	      65400.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS120+08-028   	        121.7 	          9.3 	        120.1 	          4.1 	          3.4 
+6.200000e+00   	     -27800.0 	      27800.0 	          2.3 	      19700.0 	      32000.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS153-10-026*   	        152.9 	        -11.2 	        152.8 	          2.7 	          2.1 
+1.260000e+01   	     -25800.0 	      10300.0 	          3.1 	      10100.0 	      17800.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS247+06+055*   	        246.2 	          6.4 	        246.6 	          1.7 	          1.5 
+-4.250000e+01   	      54600.0 	      11300.0 	          5.2 	      11200.0 	       8790.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS246-05+086   	        245.7 	         -4.7 	        245.6 	          1.1 	          0.7 
+-2.900000e+00   	      85500.0 	      12400.0 	          9.0 	      19400.0 	      26700.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+GS142-01-057   	        142.2 	         -1.7 	        141.8 	          2.0 	          1.9 
+1.225000e+02   	     -56700.0 	      12400.0 	          6.8 	     101000.0 	      78600.0 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+268+00+108   	        268.4 	          0.3 	        268.3 	          2.2 	          1.7 
+1.000000e-01   	     108200.0 	      11300.0 	         14.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+268+06+036*   	        268.1 	          6.3 	        268.0 	          2.2 	          1.8 
+5.690000e+01   	      36100.0 	      15500.0 	          5.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+266-05+096*   	        266.1 	         -4.5 	        266.2 	          2.6 	          2.0 
+-2.180000e+01   	      95800.0 	      13400.0 	         11.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+265-10+080*   	        266.2 	        -10.7 	        265.4 	          1.8 	          1.7 
+-3.220000e+01   	      80400.0 	      10300.0 	          9.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+265+05+043*   	        265.5 	          5.8 	        264.9 	          3.5 	          2.2 
+1.207000e+02   	      43300.0 	      10300.0 	          5.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+264+23+019*   	        267.2 	         24.3 	        264.3 	          6.8 	          5.8 
+u   	      18600.0 	       5200.0 	          3.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+263-02+093   	        263.2 	         -1.3 	        262.9 	          1.4 	          0.9 
+1.160000e+01   	      92800.0 	       8200.0 	         10.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+263+09+042*   	        262.7 	          9.8 	        262.5 	          2.6 	          2.1 
+4.740000e+01   	      42300.0 	      18600.0 	          5.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+262-08+091*   	        261.8 	         -8.8 	        262.3 	          1.9 	          1.6 
+-7.400000e+00   	      90700.0 	      12400.0 	         10.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+262-01+110   	        262.0 	         -0.7 	        262.2 	          1.4 	          0.9 
+6.950000e+01   	     110300.0 	       6200.0 	         13.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+260-05+104   	        259.5 	         -5.4 	        259.9 	          1.8 	          1.2 
+5.000000e-01   	     104100.0 	       6200.0 	         12.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+258+22+020   	        258.1 	         22.3 	        257.7 	          5.3 	          3.1 
+7.560000e+01   	      19600.0 	      11300.0 	          2.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+256+00+079   	        255.7 	          0.3 	        255.9 	          1.4 	          1.2 
+   	      79400.0 	       6200.0 	          8.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+254-05+080   	        254.1 	         -6.2 	        254.2 	          2.8 	          2.1 
+1.000000e-01   	      80400.0 	       9300.0 	          8.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+254+30+016*   	        253.9 	         28.6 	        254.1 	          7.9 	          4.7 
+5.750000e+01   	      16500.0 	      13400.0 	          2.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+252-03+039   	        252.4 	         -2.4 	        252.4 	          2.1 	          1.3 
+8.170000e+01   	      39200.0 	      10300.0 	          3.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+252+02+052*   	        252.1 	          2.6 	        252.1 	          2.4 	          1.5 
+5.400000e+00   	      51500.0 	       9300.0 	          5.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+252-21+031*   	        249.6 	        -21.5 	        251.9 	          6.5 	          3.6 
+1.151000e+02   	      30900.0 	      10300.0 	          3.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+252+04+064*   	        250.7 	          3.9 	        251.6 	          2.1 	          1.2 
+1.040000e+01   	      63900.0 	      14400.0 	          6.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+251-02+111   	        250.7 	         -1.8 	        251.3 	          1.5 	          0.9 
+-1.200000e+00   	     111300.0 	      22700.0 	         13.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+250-14+055*   	        249.4 	        -16.1 	        250.5 	          4.3 	          2.9 
+1.237000e+02   	      54600.0 	      13400.0 	          5.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+247-13+045*   	        246.3 	        -14.2 	        246.7 	          3.3 	          2.7 
+6.610000e+01   	      45400.0 	      16500.0 	          4.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+246-01+109   	        246.4 	         -0.7 	        246.2 	          1.7 	          1.1 
+2.730000e+01   	     109200.0 	       9300.0 	         13.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+246-06+055   	        245.7 	         -5.5 	        246.1 	          2.0 	          1.6 
+-1.260000e+01   	      54600.0 	      11300.0 	          5.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+246+00+100   	        245.8 	          0.8 	        246.1 	          2.8 	          2.3 
+-3.490000e+01   	     100000.0 	       8300.0 	         11.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+243-15+047*   	        241.7 	        -15.7 	        243.5 	          5.6 	          4.9 
+   	      47400.0 	      12400.0 	          4.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+243-10+053   	        243.4 	         -9.5 	        243.4 	          1.6 	          1.5 
+1.301000e+02   	      52600.0 	      27800.0 	          4.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+243+06+047*   	        242.8 	          6.4 	        243.2 	          2.2 	          1.4 
+1.750000e+01   	      47400.0 	       7200.0 	          4.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+241-19+035*   	        241.7 	        -20.1 	        240.9 	          3.1 	          1.9 
+,   	      35000.0 	      10300.0 	          3.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+241+08+066   	        240.8 	          8.4 	        240.9 	          1.5 	          1.4 
+2.330000e+01   	      66000.0 	      17500.0 	          6.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+240-08+051   	        239.6 	         -7.7 	        240.4 	          2.3 	          1.9 
+8.590000e+01   	      50500.0 	       5200.0 	          4.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+238+02+068*   	        237.5 	          2.4 	        238.0 	          2.7 	          1.7 
+-2.090000e+01   	      68000.0 	      15500.0 	          6.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+238-07+057   	        238.2 	         -7.7 	        237.6 	          2.4 	          1.7 
+-1.340000e+01   	      56700.0 	       6200.0 	          5.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+237+11+032*   	        236.5 	         13.3 	        237.0 	          4.7 	          3.9 
+6.270000e+01   	      32000.0 	       7200.0 	          2.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+235-03+083   	        234.7 	         -2.7 	        235.1 	          1.2 	          0.8 
+0   	      83500.0 	       9300.0 	          9.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+231+01+087   	        231.7 	          2.8 	        231.4 	          3.3 	          2.4 
+1.021000e+02   	      86600.0 	      14400.0 	         10.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+229-02+094   	        227.9 	         -1.3 	        228.8 	          2.2 	          1.5 
+1.900000e+00   	      93800.0 	       8200.0 	         13.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+226-07+039   	        226.7 	         -7.7 	        226.3 	          2.9 	          2.0 
+-4.120000e+01   	      39200.0 	      15500.0 	          3.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+224+07+038   	        225.1 	          9.3 	        224.4 	          4.6 	          3.9 
+2.280000e+01   	      38100.0 	      15500.0 	          3.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+220+00+048   	        220.6 	         -0.1 	        219.6 	          2.0 	          1.0 
+8.700000e+00   	      48400.0 	       6200.0 	          5.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+219-27+023*   	        219.7 	        -27.2 	        218.6 	         11.1 	          6.5 
+-2.850000e+01   	      22700.0 	       9600.0 	          2.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+218+03+055   	        217.3 	          4.1 	        217.6 	          2.1 	          1.3 
+9.500000e+00   	      54600.0 	       7200.0 	          6.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+217-03+065   	        217.1 	         -3.5 	        217.4 	          1.5 	          1.3 
+-1.570000e+01   	      64900.0 	       6200.0 	          8.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+216-21+035*   	        216.1 	        -20.5 	        216.2 	          2.5 	          2.0 
+7.710000e+01   	      35000.0 	      19600.0 	          3.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+215-11+033   	        215.8 	        -11.3 	        215.2 	          3.0 	          2.2 
+2.250000e+01   	      33000.0 	       6200.0 	          3.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+208-36+016*   	        208.2 	        -36.7 	        207.6 	          4.1 	          2.0 
+-1.100000e+01   	      16500.0 	      10300.0 	          2.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+206+07+051   	        206.4 	          7.8 	        206.5 	          2.3 	          1.5 
+1.214000e+02   	      50500.0 	      15500.0 	          9.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+203+09+025*   	        204.2 	         10.0 	        203.2 	          2.5 	          2.0 
+5.960000e+01   	      24700.0 	      12400.0 	          3.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+202+05+031   	        201.4 	          5.7 	        201.6 	          2.1 	          1.7 
+1.980000e+01   	      30900.0 	      20600.0 	          5.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+199-39+022   	        198.7 	        -39.1 	        199.4 	          3.9 	          2.6 
+-1.560000e+01   	      21600.0 	       6200.0 	          5.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+199+02+033   	        199.2 	          2.8 	        199.0 	          1.4 	          1.4 
+1.187000e+02   	      33000.0 	       9300.0 	          7.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+163+09-048   	        164.1 	          9.2 	        162.9 	          2.9 	          2.5 
+-3.840000e+01   	     -48400.0 	      16500.0 	         35.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+158-27-039   	        158.2 	        -27.7 	        158.1 	          1.9 	          1.7 
+1.277000e+02   	     -39200.0 	      14400.0 	         10.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+157-02-049   	        156.7 	         -2.2 	        156.7 	          1.3 	          0.9 
+-3.000000e-01   	     -49500.0 	       8300.0 	         11.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+157+03-044   	        156.8 	          3.4 	        156.6 	          1.4 	          1.2 
+9.060000e+01   	     -44300.0 	       9300.0 	          9.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+156+32-053   	        155.8 	         31.8 	        155.9 	          1.7 	          0.7 
+9.100000e+00   	     -52600.0 	       9300.0 	         18.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+154+35-057   	        155.2 	         35.7 	        154.5 	          4.4 	          3.1 
+-1.230000e+01   	     -56700.0 	      14400.0 	         25.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+154+00-071   	        153.7 	          0.2 	        153.9 	          1.6 	          1.1 
+2.330000e+01   	     -71100.0 	       9300.0 	         22.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+153+34-052   	        153.0 	         34.6 	        153.1 	          2.4 	          1.9 
+1.550000e+01   	     -51500.0 	      11300.0 	         14.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+153-05-029*   	        152.8 	         -4.8 	        152.5 	          3.2 	          2.5 
+7.760000e+01   	     -28900.0 	       6200.0 	          3.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+152-03-078   	        152.2 	         -2.8 	        151.9 	          2.1 	          1.1 
+-1.180000e+01   	     -78300.0 	       9300.0 	         27.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+150+05-058   	        150.2 	          6.3 	        149.6 	          3.6 	          2.4 
+1.225000e+02   	     -57700.0 	      17500.0 	         10.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+147+41-056   	        147.3 	         41.2 	        147.5 	          2.8 	          2.0 
+	   	     -55700.0 	      12400.0 	         14.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+147-09-056   	        146.7 	        -10.4 	        146.7 	          2.5 	          1.9 
+6.810000e+01   	     -55700.0 	       9300.0 	          8.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+146+06-045*   	        146.6 	          7.7 	        146.5 	          2.6 	          1.5 
+-3.230000e+01   	     -45400.0 	      11300.0 	          5.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+146-05-078   	        146.4 	         -5.4 	        145.8 	          2.8 	          1.7 
+   	     -78300.0 	      12400.0 	         16.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+146-48-016   	        143.7 	        -46.9 	        145.8 	          7.6 	          4.9 
+2.300000e+00   	     -16500.0 	       8200.0 	          2.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+145+38-058   	        145.2 	         37.1 	        145.0 	          2.8 	          1.8 
+-4.100000e+00   	     -57700.0 	      12400.0 	         12.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+145-09-066   	        144.4 	        -10.2 	        144.8 	          3.3 	          2.0 
+1.213000e+02   	     -66000.0 	      12400.0 	         10.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+142-15-030*   	        141.9 	        -16.2 	        142.1 	          4.7 	          2.5 
+2.040000e+01   	     -29900.0 	      13400.0 	          2.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+141-05-041*   	        141.2 	         -6.1 	        141.4 	          3.9 	          2.4 
+3.450000e+01   	     -41200.0 	      20600.0 	          4.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+141+18-057   	        144.6 	         23.5 	        141.2 	         10.2 	          7.9 
+-9.600000e+00   	     -56700.0 	      16500.0 	          8.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+139+09-067   	        139.5 	         11.1 	        138.9 	          3.9 	          2.4 
+-1.430000e+01   	     -67000.0 	      13400.0 	          8.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+138+08-077   	        137.7 	          8.6 	        137.8 	          5.0 	          3.0 
+    	     -77300.0 	       9300.0 	         10.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+137+06-029*   	        137.6 	          6.4 	        136.7 	          3.5 	          2.7 
+-5.800000e+00   	     -28900.0 	      15500.0 	          2.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+136+05-102   	        137.2 	          4.4 	        136.4 	          2.3 	          1.7 
+   	    -102000.0 	      14400.0 	         19.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+136-04-077   	        136.2 	         -3.7 	        136.3 	          2.5 	          2.2 
+1.251000e+02   	     -77300.0 	      10300.0 	          9.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+135+08-057   	        135.2 	          9.0 	        135.4 	          2.2 	          1.7 
+-1.020000e+01   	     -56700.0 	      11300.0 	          5.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+135+05-081   	        135.2 	          5.5 	        134.6 	          2.6 	          2.1 
+-8.000000e+00   	     -81400.0 	      12400.0 	         10.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+135+02-090   	        135.2 	          2.6 	        134.5 	          2.4 	          1.6 
+-6.300000e+00   	     -89700.0 	      11300.0 	         13.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+134+11-044*   	        132.7 	         12.0 	        134.0 	          4.0 	          2.1 
+4.200000e+00   	     -44300.0 	       9300.0 	          4.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+133-03-063   	        132.9 	         -3.3 	        133.0 	          2.0 	          1.3 
+2.670000e+01   	     -62900.0 	       7200.0 	          6.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+132+04-106   	        133.0 	          3.4 	        132.1 	          2.7 	          1.4 
+-1.620000e+01   	    -106200.0 	       7200.0 	         18.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+132-01-078   	        132.2 	         -0.9 	        131.9 	          1.3 	          1.2 
+2.710000e+01   	     -78300.0 	      10300.0 	          9.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+132+01-109   	        132.3 	          1.1 	        131.8 	          2.3 	          1.3 
+1.920000e+01   	    -109200.0 	       9300.0 	         19.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+131-05-067*   	        131.0 	         -5.6 	        131.2 	          1.5 	          1.0 
+1.170000e+01   	     -67000.0 	      24700.0 	          7.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+130-04-096   	        130.7 	         -4.6 	        130.5 	          2.0 	          1.0 
+2.510000e+01   	     -95800.0 	      17500.0 	         13.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+130+00-101   	        130.2 	          0.3 	        129.6 	          2.9 	          2.0 
+2.760000e+01   	    -101000.0 	       7200.0 	         14.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+128-07-066*   	        128.7 	         -6.8 	        128.4 	          1.7 	          1.0 
+4.780000e+01   	     -66000.0 	      15500.0 	          6.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+128+01-103   	        128.1 	          0.9 	        128.4 	          3.2 	          2.0 
+1.040000e+01   	    -103100.0 	       9300.0 	         14.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+127-01-082   	        127.9 	         -1.7 	        127.5 	          3.5 	          2.7 
+-5.600000e+00   	     -82500.0 	      18600.0 	          9.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+127-02-069   	        127.7 	         -2.4 	        127.4 	          2.5 	          1.9 
+   	     -69100.0 	      13400.0 	          7.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+127-05-066*   	        127.2 	         -5.1 	        126.9 	          1.8 	          1.5 
+-1.800000e+00   	     -66000.0 	      11300.0 	          6.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+126+00-112   	        126.7 	         -0.2 	        126.3 	          2.0 	          1.9 
+6.400000e+00   	    -112300.0 	       9300.0 	         17.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+126+05-123   	        126.5 	          4.7 	        126.3 	          2.4 	          1.9 
+5.850000e+01   	    -122600.0 	      15500.0 	         21.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+126+01-061   	        126.5 	          1.3 	        126.0 	          1.6 	          1.2 
+2.660000e+01   	     -60800.0 	       7200.0 	          5.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+125-04-072   	        124.8 	         -4.4 	        125.2 	          1.7 	          1.4 
+1.187000e+02   	     -72100.0 	      26800.0 	          7.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+123+01-060*   	        122.9 	         -0.2 	        123.0 	          1.6 	          1.5 
+-4.060000e+01   	     -59800.0 	      12400.0 	          5.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+121+24-023*   	        120.8 	         23.5 	        121.2 	          5.4 	          3.9 
+1.112000e+02   	     -22700.0 	      20600.0 	          2.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+120+02-059*   	        120.2 	          2.4 	        120.5 	          1.5 	          1.1 
+1.280000e+01   	     -58700.0 	      10300.0 	          5.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+120+03-095   	        120.7 	          3.3 	        120.4 	          3.2 	          2.3 
+5.100000e+00   	     -94800.0 	      16500.0 	         10.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+120-17-043*   	        118.7 	        -17.1 	        119.8 	          6.0 	          4.3 
+7.720000e+01   	     -43300.0 	      29900.0 	          4.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+116+02-061*   	        116.7 	          1.2 	        116.5 	          1.5 	          1.1 
+1.820000e+01   	     -60800.0 	       9300.0 	          5.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+116+06-059*   	        116.6 	          6.7 	        116.4 	          2.4 	          1.9 
+1.269000e+02   	     -58700.0 	      13400.0 	          5.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+116+04-089   	        116.2 	          3.8 	        116.0 	          1.6 	          1.0 
+2.180000e+01   	     -88600.0 	       8200.0 	          9.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+116-09-062*   	        115.9 	        -10.2 	        115.9 	          2.1 	          1.6 
+-1.980000e+01   	     -61800.0 	      24700.0 	          6.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+115-01-059   	        114.7 	         -1.3 	        114.9 	          1.5 	          1.2 
+4.990000e+01   	     -58700.0 	      15500.0 	          5.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+115+04-048*   	        114.4 	          5.7 	        114.7 	          3.0 	          2.6 
+2.550000e+01   	     -48400.0 	      12400.0 	          4.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+114+02-112   	        114.7 	          2.4 	        114.3 	          1.9 	          1.5 
+1.281000e+02   	    -112300.0 	       9300.0 	         14.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+114-01-099   	        114.1 	         -2.8 	        114.0 	          2.7 	          2.1 
+7.380000e+01   	     -98900.0 	      13400.0 	         11.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+114+00-044*   	        113.6 	          0.5 	        113.8 	          2.2 	          1.6 
+-2.600000e+01   	     -44300.0 	      12400.0 	          4.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+113+18-023   	        113.8 	         18.3 	        113.4 	          4.2 	          3.6 
+6.610000e+01   	     -22700.0 	      18600.0 	          2.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+113-02-107   	        113.8 	         -2.2 	        113.2 	          2.7 	          2.0 
+7.740000e+01   	    -107200.0 	      17500.0 	         12.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+113+01-086*   	        113.4 	          0.3 	        113.0 	          1.9 	          1.5 
+-1.800000e+00   	     -85500.0 	      12400.0 	          9.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+113+09-077*   	        113.2 	          9.0 	        112.7 	          2.2 	          1.4 
+8.800000e+00   	     -77300.0 	      34000.0 	          7.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+113+05-063   	        112.7 	          5.9 	        112.5 	          2.0 	          1.6 
+   	     -62900.0 	      18600.0 	          6.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+112+08-130   	        112.9 	          9.0 	        112.3 	          2.2 	          1.3 
+-2.970000e+01   	    -129900.0 	      12400.0 	         19.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+112+20-035*   	        115.2 	         21.2 	        111.8 	          7.8 	          6.2 
+   	     -35000.0 	      15500.0 	          3.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+111+04-109   	        110.9 	          3.7 	        111.0 	          1.4 	          1.1 
+-9.000000e-01   	    -109200.0 	       9300.0 	         13.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+111+08-075*   	        111.2 	          8.8 	        111.0 	          2.0 	          1.8 
+9.170000e+01   	     -75200.0 	      11300.0 	          7.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+111+33-081   	        110.9 	         32.9 	        110.7 	          1.9 	          0.8 
+-6.100000e+00   	     -81400.0 	      19600.0 	         10.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+111+03-080   	        110.8 	          3.3 	        110.5 	          1.1 	          0.5 
+-1.130000e+01   	     -80400.0 	       9300.0 	          8.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+110+02-117   	        110.0 	          0.8 	        110.3 	          4.5 	          2.7 
+1.960000e+01   	    -117500.0 	      20600.0 	         14.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+110+05-114   	        110.1 	          5.7 	        110.0 	          1.7 	          1.1 
+1.000000e-01   	    -114400.0 	      14400.0 	         14.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+108+24-029   	        108.7 	         23.3 	        107.7 	          2.7 	          2.2 
+1.880000e+01   	     -28900.0 	      16500.0 	          3.1 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+107+04-052*   	        106.7 	          5.3 	        107.4 	          2.5 	          2.1 
+5.310000e+01   	     -51500.0 	      11300.0 	          5.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+107+07-107   	        107.1 	          6.7 	        107.2 	          1.6 	          0.9 
+-1.140000e+01   	    -107200.0 	      12400.0 	         12.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+107+09-128   	        106.8 	         10.3 	        106.8 	          2.7 	          2.1 
+-4.200000e+00   	    -127800.0 	       9300.0 	         17.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+107+07-119   	        106.2 	          7.3 	        106.7 	          2.8 	          2.3 
+-2.400000e+01   	    -118500.0 	      21600.0 	         15.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+106-10-043*   	        106.4 	        -10.1 	        106.4 	          2.6 	          1.6 
+-3.280000e+01   	     -43300.0 	      23700.0 	          4.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+105+09-021   	        105.4 	          7.7 	        105.3 	          3.9 	          3.2 
+-1.500000e+00   	     -20600.0 	      27800.0 	          2.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+104-20-035*   	        105.9 	        -20.3 	        104.2 	          4.2 	          2.6 
+3.190000e+01   	     -35000.0 	      28900.0 	          3.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+104+06-092*   	        103.4 	          7.3 	        103.5 	          3.3 	          2.4 
+5.890000e+01   	     -91700.0 	      27800.0 	         10.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+103+08-129   	        102.6 	          8.8 	        103.4 	          4.9 	          2.4 
+1.700000e+00   	    -128800.0 	      18600.0 	         17.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+103+03-113   	        102.1 	          0.8 	        102.7 	          3.0 	          2.3 
+   	    -113400.0 	       7200.0 	         13.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+102+00-085*   	        103.2 	         -2.0 	        102.2 	          6.7 	          3.1 
+-4.100000e+00   	     -84500.0 	      10300.0 	          9.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+101+26-042*   	        100.6 	         26.8 	        100.6 	          2.1 	          1.7 
+1.143000e+02   	     -42300.0 	      26800.0 	          5.3 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+100+05-101   	         99.8 	          5.6 	         99.9 	          1.7 	          0.9 
+6.000000e-01   	    -101000.0 	      15500.0 	         12.0 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+100+29-042*   	         99.9 	         29.7 	         99.9 	          1.8 	          1.5 
+9.560000e+01   	     -42300.0 	      27800.0 	          5.5 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+100+37-057   	         99.1 	         37.3 	         99.5 	          2.6 	          1.8 
+-1.880000e+01   	     -56700.0 	       7200.0 	          7.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+099-09-030*   	         98.9 	        -10.2 	         99.0 	          2.8 	          2.4 
+9.290000e+01   	     -29900.0 	      21600.0 	          3.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+098-01-046*   	         97.9 	         -1.2 	         98.0 	          1.8 	          0.8 
+-2.900000e+00   	     -46400.0 	      13400.0 	          5.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+098+01-048*   	         97.3 	          0.8 	         97.6 	          2.3 	          1.3 
+-4.100000e+00   	     -48400.0 	      11300.0 	          5.7 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+097+00-028   	         97.2 	          0.8 	         96.9 	          2.3 	          1.5 
+1.323000e+02   	     -27800.0 	      21600.0 	          3.6 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+094+08-043*   	         92.7 	          7.8 	         94.3 	          5.9 	          3.3 
+-1.830000e+01   	     -43300.0 	      15500.0 	          5.8 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+092+03-113   	         91.7 	          2.3 	         91.7 	          1.9 	          1.5 
+1.013000e+02   	    -113400.0 	      17500.0 	         14.9 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+091+08-035*   	         91.1 	          7.3 	         91.4 	          3.6 	          3.3 
+-3.350000e+01   	     -35000.0 	      23700.0 	          5.2 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+091-04-067*   	         91.9 	         -4.0 	         91.0 	          4.6 	          2.7 
+1.700000e+00   	     -67000.0 	      35000.0 	          8.4 	          NaN 	          NaN 
+Name   	 long 	 lat 	 X0 	 Y0 	 a 	 b 	 tita 	 V0 	 dV 	 D 	 MassMiss  	 MassShell 
+091+06-115   	         90.7 	          6.3 	         90.7 	          2.3 	          1.6 
+-3.610000e+01   	    -115400.0 	       9300.0 	         15.6 	          NaN 	          NaN 
