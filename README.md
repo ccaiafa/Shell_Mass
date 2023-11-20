@@ -7,5 +7,7 @@ The information of previously identified shells are included in the functions "l
 
 Some relevant functions are included in the folder /main_functions/ such as:
 
-- 
+- "run_all_masses.m": This function compute the masses and temperatures of each of the shells.
+- "Compute_mass_V5.m": This function computes the radial profiles of a shell starting from its central local minima. Based on these profiles, the external walls are detected. The cloud of points detected as potential walls are then refined and finally an ellipse is fit to them.
+
 
